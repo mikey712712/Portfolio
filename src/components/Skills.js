@@ -45,7 +45,6 @@ export default function Skills() {
 					borderRight={["unset", "unset", "unset", "2px solid white"]}
 					borderBottom={["2px solid white", "2px solid white", "2px solid white", "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
-					h={["280px", , "fit-content"]}
 				>
 					<Text color={"#12cc53"} w="90%" fontSize={"1.5em"}>
 						Frontend Design
@@ -68,7 +67,6 @@ export default function Skills() {
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					h={["230px", , "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 					borderBottom={["2px solid white", "2px solid white", "2px solid white", "unset"]}
 				>
@@ -94,7 +92,6 @@ export default function Skills() {
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					h={["230px", , "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 				>
 					<Text color={"#12cc53"} fontSize={"1.5em"}>
@@ -114,7 +111,6 @@ export default function Skills() {
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					h={["230px", , "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 					borderTop={["unset", "unset", "unset", "2px solid white"]}
 				>
