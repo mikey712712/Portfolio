@@ -148,7 +148,7 @@ export default function Welcome({ tabWidth }) {
 							</Text>
 							<br />
 							<Text fontSize={"1.2em"} color="white" fontWeight={"400"}>
-								Since 2019 I've been attending The University of New South Wales as an Aerospace Engineering major while working in logistics.
+								Since 2019 I've been attending The University of New South Wales studying Aerospace Engineering while working in logistics.
 							</Text>
 						</Box>
 					</Box>
