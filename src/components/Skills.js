@@ -1,8 +1,22 @@
 import { Box, Divider, Flex, Text } from "@chakra-ui/react"
-import { FaReact } from "react-icons/fa"
-import { SiVite, SiJavascript, SiCss3, SiChakraui, SiBootstrap, SiPython, SiFlask, SiNodedotjs, SiGithub } from "react-icons/si"
+import { FaReact, FaWrench } from "react-icons/fa"
+import {
+	SiVite,
+	SiJavascript,
+	SiCss3,
+	SiChakraui,
+	SiBootstrap,
+	SiPython,
+	SiFlask,
+	SiNodedotjs,
+	SiGithub,
+	SiPostgresql,
+	SiFirebase,
+	SiMongodb,
+} from "react-icons/si"
 import { AiFillHtml5 } from "react-icons/ai"
 import { ImEmbed2 } from "react-icons/im"
+import { TbMathFunction } from "react-icons/tb"
 export default function Skills() {
 	return (
 		<Flex position={"relative"} m="20px 0" w={"100%"} h={"fit-content"} boxSizing={"border-box"} p={[, , , "0 40px"]}>
@@ -14,12 +28,12 @@ export default function Skills() {
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
-				p="30px"
+				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
 				color="white"
 				justify={"flex-start"}
 				alignItems={"stretch"}
-				fontSize={["0.8em", , , "1em"]}
+				fontSize={["0.8em", , , "1.05em"]}
 			>
 				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.8em"}>
 					Skills
@@ -74,30 +88,47 @@ export default function Skills() {
 					</Flex>
 				</Flex>
 				<Flex
-					flexFlow={"column nowrap"}
-					boxSizing="border-box"
-					p={"15px"}
 					borderBottom={["2px solid white", "2px solid white", "2px solid white", "unset"]}
 					borderRight={["unset", "unset", "unset", "2px solid white"]}
 					borderTop={["unset", "unset", "unset", "2px solid white"]}
+					flexFlow={"column nowrap"}
+					boxSizing="border-box"
+					p={"15px"}
+					h={["230px", , "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
-					h={["fit-content", "fit-content", "fit-content", "240px"]}
 				>
 					<Text color={"#12cc53"} fontSize={"1.5em"}>
 						Database Management
 					</Text>
+					<Text marginBottom={"auto"} w="95%">
+						Familiar with the use of both relational and non-relational databases such as PostgreSQL, Firebase (Firestore, RealtimeDB,
+						Authentication), MongoDB/MongoDB Atlas.
+					</Text>
+					<Flex h="40px" alignItems={"center"} color="#12cc53" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+						<SiPostgresql className="postgres-icon" />
+						<SiFirebase />
+						<SiMongodb />
+					</Flex>
 				</Flex>
 				<Flex
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					borderTop={["unset", "unset", "unset", "2px solid white"]}
+					h={["230px", , "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
-					h={["fit-content", "fit-content", "fit-content", "240px"]}
+					borderTop={["unset", "unset", "unset", "2px solid white"]}
 				>
 					<Text color={"#12cc53"} fontSize={"1.5em"}>
 						Problem Solving
 					</Text>
+					<Text marginBottom={"auto"} w="95%">
+						Extensive background in problem solving with a strong capability to apply creative, analytical, critical-thinking, and research skills
+						to identify a problem and pick the best of all possible solutions. Very comfortable in dealing with mathematical problems.
+					</Text>
+					<Flex h="40px" alignItems={"center"} color="#12cc53" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+						<FaWrench fontSize={"0.9em"} />
+						<TbMathFunction />
+					</Flex>
 				</Flex>
 			</Flex>
 		</Flex>

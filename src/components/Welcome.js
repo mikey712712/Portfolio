@@ -39,16 +39,17 @@ export default function Welcome({ tabWidth }) {
 
 	const WelcomeMessage = ({ message, index }) => {
 		return (
-			<Flex className={`word${index}`} position={"relative"} marginRight={["14px", "16px", , "22px"]} flexFlow={"row nowrap"}>
+			<Flex className={`word${index}`} position={"relative"} marginRight={["14px", "16px", , "30px"]} flexFlow={"row nowrap"}>
 				{message.split("").map((char, i) => {
 					return (
 						<Heading
-							fontWeight={"500"}
+							fontWeight={"400"}
 							transition={"400ms"}
 							color="#ebebeb"
 							fontSize={["2.6em", "3.2em", "4.8em"]}
 							cursor={"default"}
 							className="welcome-char"
+							fontFamily={"Sono, sans-serif"}
 							key={i}
 						>
 							{char}

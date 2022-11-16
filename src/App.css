@@ -7,10 +7,14 @@ html {
 #root {
 	width: 100vw;
 	min-height: 100vh !important;
-	font-family: "Raleway", sans-serif !important;
+	font-family: "Sono", sans-serif !important;
 	background-color: #191414;
 }
 
 .header {
 	font-family: "Sono", sans-serif !important;
+}
+
+.postgres-icon {
+	margin-right: 5px;
 }
