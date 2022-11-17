@@ -20,8 +20,8 @@ import { TbMathFunction } from "react-icons/tb"
 export default function Skills({ scrollLevel }) {
 	return (
 		<Flex
-			opacity={scrollLevel > 130 ? 1 : 0}
-			top={scrollLevel > 130 ? "80px" : "0"}
+			opacity={scrollLevel > 70 ? 1 : 0}
+			top={scrollLevel > 70 ? "80px" : "0"}
 			position={"relative"}
 			transition={"800ms"}
 			w={"100%"}
