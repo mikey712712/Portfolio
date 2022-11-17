@@ -28,6 +28,7 @@ export default function Skills({ scrollLevel }) {
 			h={"fit-content"}
 			boxSizing={"border-box"}
 			p={[, , , "0 40px"]}
+			id="skills"
 		>
 			<Flex
 				position={"relative"}
