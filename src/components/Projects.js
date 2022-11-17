@@ -1,8 +1,17 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react"
 
-export default function Projects() {
+export default function Projects({ scrollLevel }) {
 	return (
-		<Flex position={"relative"} m="150px 0" w={"100%"} h={"fit-content"} boxSizing={"border-box"}>
+		<Flex
+			opacity={scrollLevel > window.innerHeight * 1 ? 1 : 0}
+			top={scrollLevel > window.innerHeight * 1 ? "80px" : "0"}
+			transition={"800ms"}
+			position={"relative"}
+			m="150px 0"
+			w={"100%"}
+			h={"fit-content"}
+			boxSizing={"border-box"}
+		>
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
@@ -21,50 +30,50 @@ export default function Projects() {
 				<Text boxSizing="border-box" p={"0 0 15px 15px"} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.8em"}>
 					Projects
 				</Text>
-				<Flex p={"0 0 0 15px"} m="0 0 65px 0" h="300px">
+				<Flex p={[, , , "0 0 0 15px"]} m="0 0 65px 0" h="300px" flexFlow={["column nowrap", , "row nowrap"]}>
 					<Image
 						border={"2px solid rgba(255,255,255,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/quickchat.png"}
-						w="30%"
-						h="100%"
+						w={["100%", , "30%"]}
+						h={[, , , "100%"]}
 						objectFit={"cover"}
 						filter={"brightness(70%) blur(1px)"}
 					/>
-					<Box p={"0 0 0 25px"}>
+					<Box p={[, , , "0 0 0 25px"]}>
 						<Text color={"#12cc53"} fontSize={"1.7em"}>
 							QuickChat
 						</Text>
 					</Box>
 				</Flex>
-				<Flex p={"0 0 0 15px"} m="0 0 65px 0" h="300px">
+				<Flex p={[, , , "0 0 0 15px"]} m="0 0 65px 0" h="300px" flexFlow={["column nowrap", , "row nowrap"]}>
 					<Image
 						border={"2px solid rgba(255,255,255,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/projecttracker.png"}
-						w="30%"
-						h="100%"
+						w={["100%", , "30%"]}
+						h={[, , , "100%"]}
 						objectFit={"cover"}
 						filter={"brightness(70%) blur(1px)"}
 					/>
-					<Box p={"0 0 0 25px"}>
+					<Box p={[, , , "0 0 0 25px"]}>
 						<Text color={"#12cc53"} fontSize={"1.7em"}>
 							Project Tracker
 						</Text>
 						<Text>wowowowowoo</Text>
 					</Box>
 				</Flex>
-				<Flex p={"0 0 0 15px"} h="300px">
+				<Flex p={[, , , "0 0 0 15px"]} h="300px" flexFlow={["column nowrap", , "row nowrap"]}>
 					<Image
 						border={"2px solid rgba(255,255,255,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/tictactoe.png"}
-						w="30%"
-						h="100%"
+						w={["100%", , "30%"]}
+						h={[, , , "100%"]}
 						objectFit={"cover"}
 						filter={"brightness(70%) blur(1px)"}
 					/>
-					<Box p={"0 0 0 25px"}>
+					<Box p={[, , , "0 0 0 25px"]}>
 						<Text color={"#12cc53"} fontSize={"1.7em"}>
 							Tic-Tac-Toe/Connect 4
 						</Text>

@@ -20,13 +20,28 @@ function App() {
 			window.removeEventListener("resize", setResize)
 		}
 	})
+	const [scrollLevel, setScrollLevel] = useState(window.scrollY)
+
+	function logit() {
+		setScrollLevel(window.pageYOffset)
+	}
+
+	useEffect(() => {
+		function watchScroll() {
+			window.addEventListener("scroll", logit)
+		}
+		watchScroll()
+		return () => {
+			window.removeEventListener("scroll", logit)
+		}
+	})
 	return (
 		<ChakraProvider>
 			<Box h={"100%"} w={"100vw"} className="App">
 				<Header tabWidth={tabWidth} />
-				<Welcome tabWidth={tabWidth} />
-				<Skills />
-				<Projects />
+				<Welcome tabWidth={tabWidth} scrollLevel={scrollLevel} />
+				<Skills scrollLevel={scrollLevel} />
+				<Projects scrollLevel={scrollLevel} />
 			</Box>
 		</ChakraProvider>
 	)

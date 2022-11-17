@@ -17,9 +17,18 @@ import {
 import { AiFillHtml5 } from "react-icons/ai"
 import { ImEmbed2 } from "react-icons/im"
 import { TbMathFunction } from "react-icons/tb"
-export default function Skills() {
+export default function Skills({ scrollLevel }) {
 	return (
-		<Flex position={"relative"} m="20px 0" w={"100%"} h={"fit-content"} boxSizing={"border-box"} p={[, , , "0 40px"]}>
+		<Flex
+			opacity={scrollLevel > 130 ? 1 : 0}
+			top={scrollLevel > 130 ? "80px" : "0"}
+			position={"relative"}
+			transition={"800ms"}
+			w={"100%"}
+			h={"fit-content"}
+			boxSizing={"border-box"}
+			p={[, , , "0 40px"]}
+		>
 			<Flex
 				position={"relative"}
 				flexFlow={["column nowrap", "column nowrap", "column nowrap", "row wrap"]}

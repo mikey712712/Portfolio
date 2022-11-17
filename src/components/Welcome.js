@@ -2,26 +2,11 @@ import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react"
 import { useEffect, useRef, useState } from "react"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
 import { SlArrowDown } from "react-icons/sl"
-import { useInViewport } from "react-in-viewport"
 
-export default function Welcome({ tabWidth }) {
+export default function Welcome({ tabWidth, scrollLevel }) {
 	const title = "Hi, I'm Michael Holton. Welcome to my portfolio."
 	const [activeCard, setActiveCard] = useState(1)
-	const [scrollLevel, setScrollLevel] = useState(window.scrollY)
 
-	function logit() {
-		setScrollLevel(window.pageYOffset)
-	}
-
-	useEffect(() => {
-		function watchScroll() {
-			window.addEventListener("scroll", logit)
-		}
-		watchScroll()
-		return () => {
-			window.removeEventListener("scroll", logit)
-		}
-	})
 	useEffect(() => {
 		let wordLength = 0
 		for (let i = 0; i < 8; i++) {
