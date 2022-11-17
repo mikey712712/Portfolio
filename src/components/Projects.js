@@ -12,6 +12,7 @@ export default function Projects({ scrollLevel }) {
 			h={"fit-content"}
 			boxSizing={"border-box"}
 			id="projects"
+			scrollMarginTop={"30px"}
 		>
 			<Flex
 				position={"relative"}

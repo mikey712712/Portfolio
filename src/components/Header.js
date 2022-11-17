@@ -19,9 +19,6 @@ export default function Header({ tabWidth }) {
 					bgGradient="linear(to-b, gray 0, #191414 75%)"
 					className="header"
 					zIndex={"300"}
-					_hover={{
-						color: "grey",
-					}}
 				>
 					<Flex
 						_hover={{
@@ -70,11 +67,11 @@ export default function Header({ tabWidth }) {
 						cursor={"pointer"}
 						m="0 30px"
 						transition={"0.4s"}
-						onClick={() =>
+						onClick={() => {
 							document.querySelector("#projects").scrollIntoView({
 								behavior: "smooth",
 							})
-						}
+						}}
 					>
 						<Text color={"#12cc53"} marginRight={"5px"}>
 							03.
