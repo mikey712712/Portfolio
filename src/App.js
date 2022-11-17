@@ -5,6 +5,7 @@ import Skills from "./components/Skills"
 import "./App.css"
 import Projects from "./components/Projects"
 import { useEffect, useState } from "react"
+import Contact from "./components/Contact"
 
 function App() {
 	const [tabWidth, setTabWidth] = useState(window.innerWidth)
@@ -42,6 +43,7 @@ function App() {
 				<Welcome tabWidth={tabWidth} scrollLevel={scrollLevel} />
 				<Skills scrollLevel={scrollLevel} />
 				<Projects scrollLevel={scrollLevel} />
+				<Contact scrollLevel={scrollLevel} />
 			</Box>
 		</ChakraProvider>
 	)
