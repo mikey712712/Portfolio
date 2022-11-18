@@ -13,12 +13,14 @@ export default function Header({ tabWidth }) {
 					boxSizing={"border-box"}
 					position={"fixed"}
 					alignItems={"center"}
-					justifyContent="flex-start"
+					justifyContent="center"
 					color={"#ebebeb"}
 					h="56px"
-					bgGradient="linear(to-b, gray 0, #191414 75%)"
+					bgColor="rgba(25, 20, 20, 0.93)"
+					backdropFilter={"blur(4px)"}
 					className="header"
 					zIndex={"300"}
+					// boxShadow="-5px 5px 80px 0 #191414"
 				>
 					<Flex
 						_hover={{

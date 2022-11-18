@@ -3,8 +3,8 @@ import { Box, Flex, Image, Link, Text } from "@chakra-ui/react"
 export default function Contact({ scrollLevel }) {
 	return (
 		<Flex
-			opacity={scrollLevel > window.innerHeight * 1.7 ? 1 : 0}
-			top={scrollLevel > window.innerHeight * 1.7 ? "80px" : "0"}
+			opacity={scrollLevel > document.querySelector("#root").scrollHeight - 1.2 * window.innerHeight ? 1 : 0}
+			// top={scrollLevel > document.querySelector("#root").scrollHeight - 1.4 * window.innerHeight ? "80px" : "0"}
 			transition={"800ms"}
 			position={"relative"}
 			m={["0", , , "150px 0"]}

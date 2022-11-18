@@ -37,9 +37,10 @@ function App() {
 			window.removeEventListener("scroll", logit)
 		}
 	})
+
 	return (
 		<ChakraProvider>
-			<Box h={"100%"} w={"100vw"} className="App">
+			<Box h={"100%"} maxW={"1600px"} m="0 auto" w={"100vw"} className="App">
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} scrollLevel={scrollLevel} />
 				<Skills scrollLevel={scrollLevel} />

@@ -31,7 +31,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							fontWeight={"400"}
 							transition={"400ms"}
 							color="#ebebeb"
-							fontSize={["2.6em", "3.2em", "4em"]}
+							fontSize={["2.2em", "3em", "4em"]}
 							cursor={"default"}
 							className="welcome-char"
 							fontFamily={"Sono, sans-serif"}
@@ -81,7 +81,6 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 					w={["100%", "100%", "100%", "55%"]}
 					p={["10px", "10px", "10px", "5px"]}
 					h={["fit-content", "fit-content", "fit-content", "100%"]}
-					color={"black"}
 				>
 					<Flex flexFlow={"row wrap"} justify="center">
 						{title.split(" ").map((word, i) => (

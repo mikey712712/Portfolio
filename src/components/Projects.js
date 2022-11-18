@@ -37,10 +37,10 @@ export default function Projects({ scrollLevel }) {
 						border={"2px solid rgba(255,255,255,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/quickchat.png"}
-						w={["100%", , , "30%"]}
+						w={["100%", , , "40%"]}
 						h={[, , , "100%"]}
 						objectFit={"fill"}
-						filter={"brightness(70%) blur(1px)"}
+						filter={"brightness(85%) blur(0.4px)"}
 						m={["15px 0 15px 0", , , "0"]}
 						alignSelf="center"
 					/>
@@ -91,10 +91,10 @@ export default function Projects({ scrollLevel }) {
 						border={"2px solid rgba(255,255,255,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/projecttracker.png"}
-						w={["100%", , , "30%"]}
+						w={["100%", , , "40%"]}
 						h={[, , , "100%"]}
 						objectFit={"fill"}
-						filter={"brightness(70%) blur(1px)"}
+						filter={"brightness(85%) blur(0.4px)"}
 						m={["15px 0 15px 0", , , "0"]}
 						alignSelf="center"
 					/>
@@ -144,10 +144,10 @@ export default function Projects({ scrollLevel }) {
 						border={"2px solid rgba(255,255,255,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/tictactoe.png"}
-						w={["100%", , , "30%"]}
+						w={["100%", , , "40%"]}
 						h={[, , , "100%"]}
 						objectFit={"fill"}
-						filter={"brightness(70%) blur(1px)"}
+						filter={"brightness(85%) blur(0.4px)"}
 						m={["15px 0 15px 0", , , "0"]}
 						alignSelf="center"
 					/>
