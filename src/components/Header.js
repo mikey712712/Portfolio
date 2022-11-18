@@ -7,6 +7,7 @@ export default function Header({ tabWidth }) {
 			{tabWidth > 1000 ? (
 				<Flex
 					w={"100%"}
+					maxW={"1600px"}
 					p={"15px"}
 					fontSize={"1.1em"}
 					fontWeight={"500"}

@@ -31,7 +31,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							fontWeight={"400"}
 							transition={"400ms"}
 							color="#ebebeb"
-							fontSize={["2.2em", "3em", "4em"]}
+							fontSize={["2em", "3em", "4em"]}
 							cursor={"default"}
 							className="welcome-char"
 							fontFamily={"Sono, sans-serif"}
@@ -93,14 +93,14 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 					w={["100%", "100%", "100%", "45%"]}
 					boxSizing="border-box"
 					position={"relative"}
-					h={["500px", "500px", "500px", "100%"]}
+					h={["400px", "400px", "400px", "100%"]}
 				>
 					<Box
 						position={"absolute"}
 						borderRadius="10px"
 						left={["5%", , , "50%"]}
 						bottom="23%"
-						h={["300px", "260px", "50%"]}
+						h={["300px", "260px", "280px", "50%"]}
 						w={["90%", "90%", "90%", "450px"]}
 						bgColor={activeCard === 1 ? "rgba(255,255,255,0.7)" : "gray"}
 						transformOrigin="bottom"
@@ -141,7 +141,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 						borderRadius="10px"
 						left={["5%", , , "50%"]}
 						bottom="23%"
-						h={["300px", "260px", "50%"]}
+						h={["300px", "260px", "280px", "50%"]}
 						w={["90%", "90%", "90%", "450px"]}
 						bgColor={activeCard === 2 ? "rgba(255,255,255,0.7)" : "gray"}
 						transformOrigin="bottom"
