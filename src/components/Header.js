@@ -17,7 +17,7 @@ export default function Header({ tabWidth }) {
 					justifyContent="center"
 					color={"#ebebeb"}
 					h="56px"
-					bgColor="rgba(25, 20, 20, 0.85)"
+					bgColor="rgba(25, 20, 20, 0.8)"
 					backdropFilter={"blur(4px)"}
 					className="header"
 					zIndex={"300"}
