@@ -132,7 +132,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							</Text>
 							<br />
 							<Text fontSize={"1.2em"} color="white" fontWeight={"400"}>
-								Since 2019 I've been attending The University of New South Wales studying Aerospace Engineering while working in logistics.
+								Since 2019 I've been studying Aerospace Engineering at The University of New South Wales while working in logistics.
 							</Text>
 						</Box>
 					</Box>

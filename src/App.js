@@ -44,7 +44,7 @@ function App() {
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} scrollLevel={scrollLevel} />
 				<Skills scrollLevel={scrollLevel} />
-				<Projects scrollLevel={scrollLevel} />
+				<Projects tabWidth={tabWidth} scrollLevel={scrollLevel} />
 				<Contact scrollLevel={scrollLevel} />
 			</Box>
 		</ChakraProvider>

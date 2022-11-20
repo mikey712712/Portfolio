@@ -1,10 +1,15 @@
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react"
+import { useEffect, useState } from "react"
 
-export default function Projects({ scrollLevel }) {
+export default function Projects({ tabWidth, scrollLevel }) {
+	const [containerHeight, setContainerHeight] = useState(null)
+	useEffect(() => {
+		setContainerHeight(document.querySelector("#projects").scrollHeight)
+	}, [tabWidth])
 	return (
 		<Flex
-			opacity={scrollLevel > window.innerHeight * 1 ? 1 : 0}
-			top={scrollLevel > window.innerHeight * 1 ? "80px" : "0"}
+			opacity={scrollLevel > window.innerHeight ? 1 : 0}
+			top={scrollLevel > window.innerHeight ? "80px" : "0"}
 			transition={"800ms"}
 			position={"relative"}
 			m={["0", , , "150px 0"]}
@@ -32,9 +37,17 @@ export default function Projects({ scrollLevel }) {
 				<Text boxSizing="border-box" p={["0", , , "0 0 15px 15px"]} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.8em"}>
 					Projects
 				</Text>
-				<Flex p={[, , , "0 0 0 15px"]} m="0 0 65px 0" h="fit-content" flexFlow={["column-reverse nowrap", , , "row nowrap"]}>
+				<Flex
+					opacity={[1, , , scrollLevel > window.innerHeight + containerHeight / 4 ? 1 : 0]}
+					transition={"1000ms"}
+					position={"relative"}
+					p={[, , , "0 0 0 15px"]}
+					m="0 0 65px 0"
+					h="fit-content"
+					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
+				>
 					<Image
-						border={"2px solid rgba(255,255,255,0.7)"}
+						border={"2px solid rgba(255,255,255,1)"}
 						borderRadius={"15px"}
 						src={"./images/quickchat.png"}
 						w={["100%", , , "40%"]}
@@ -49,10 +62,10 @@ export default function Projects({ scrollLevel }) {
 							QuickChat
 						</Text>
 						<Text m="0 0 15px 0">
-							<strong>Description:</strong> QuickChat is a full-stack single-page web application created over a time span of 4 days through the
-							collaboration of one of my peers and myself. It features video call and text messaging capabilities between users of the app, all
-							friend requests, online statuses, messages, and incoming/outgoing calls are updated and displayed for all current users in real
-							time. The messaging component also supports the sending of images/gifs and features a built in emoji picker.
+							<strong>Description:</strong> QuickChat is a full-stack single-page web application featuring video call and text messaging
+							capabilities between users of the app, all friend requests, online statuses, messages, and incoming/outgoing calls are updated and
+							displayed for all current users in real time. The messaging component also supports the sending of images/gifs and features a built
+							in emoji picker.
 						</Text>
 						<Text m="0 0 15px 0">
 							<strong>Technologies:</strong> The frontend was created using React/Vite employing Chakra-UI for styling, with Firebase acting as
@@ -86,9 +99,16 @@ export default function Projects({ scrollLevel }) {
 						</Text>
 					</Box>
 				</Flex>
-				<Flex p={[, , , "0 0 0 15px"]} m="0 0 65px 0" h="fit-content" flexFlow={["column-reverse nowrap", , , "row nowrap"]}>
+				<Flex
+					opacity={[1, , , scrollLevel > window.innerHeight + containerHeight / 2 ? 1 : 0]}
+					transition={"1200ms"}
+					p={[, , , "0 0 0 15px"]}
+					m="0 0 65px 0"
+					h="fit-content"
+					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
+				>
 					<Image
-						border={"2px solid rgba(255,255,255,0.7)"}
+						border={"2px solid rgba(255,255,255,1)"}
 						borderRadius={"15px"}
 						src={"./images/projecttracker.png"}
 						w={["100%", , , "40%"]}
@@ -103,10 +123,10 @@ export default function Projects({ scrollLevel }) {
 							CRUD Project Tracker
 						</Text>
 						<Text m="0 0 15px 0">
-							<strong>Description:</strong> This is a full-stack multi-page application I created in a 4 day timeframe that allows users to track
-							individual and collaborative work. Users are able to upload files and save notes to collaborate with their team or to stay on top of
-							their own work. Deadlines are implemented to prevent missing a project's due date, and users are able to access information shared
-							to them by any other users on their team.
+							<strong>Description:</strong> This is a full-stack multi-page CRUD app that allows users to track individual and collaborative work.
+							Users are able to upload files and save notes to collaborate with their team or to stay on top of their own work. Deadlines are
+							implemented to prevent missing a project's due date, and users are able to access information shared to them by any other users on
+							their team.
 						</Text>
 						<Text m="0 0 15px 0">
 							<strong>Technologies:</strong> The frontend was created using server rendered Embedded JavaScript (EJS) templates styled using
@@ -139,9 +159,16 @@ export default function Projects({ scrollLevel }) {
 						</Text>
 					</Box>
 				</Flex>
-				<Flex p={[, , , "0 0 0 15px"]} m="0 0 65px 0" h="fit-content" flexFlow={["column-reverse nowrap", , , "row nowrap"]}>
+				<Flex
+					opacity={[1, , , scrollLevel > window.innerHeight + containerHeight * (3 / 4) ? 1 : 0]}
+					transition={"1300ms"}
+					p={[, , , "0 0 0 15px"]}
+					m="0 0 65px 0"
+					h="fit-content"
+					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
+				>
 					<Image
-						border={"2px solid rgba(255,255,255,0.7)"}
+						border={"2px solid rgba(255,255,255,1)"}
 						borderRadius={"15px"}
 						src={"./images/tictactoe.png"}
 						w={["100%", , , "40%"]}
