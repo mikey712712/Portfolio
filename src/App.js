@@ -25,7 +25,6 @@ function App() {
 
 	function logit() {
 		setScrollLevel(window.pageYOffset)
-		console.log(scrollLevel)
 	}
 
 	useEffect(() => {
