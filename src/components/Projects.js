@@ -23,7 +23,7 @@ export default function Projects({ tabWidth, scrollLevel }) {
 				position={"relative"}
 				flexFlow="column nowrap"
 				borderRadius={"5px"}
-				borderTop={[, , , "2px solid white"]}
+				borderTop={[, , , "1px solid white"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"

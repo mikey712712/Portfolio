@@ -34,7 +34,7 @@ export default function Skills({ scrollLevel }) {
 				position={"relative"}
 				flexFlow={["column nowrap", "column nowrap", "column nowrap", "row wrap"]}
 				borderRadius={"5px"}
-				border={[, , , "2px solid white"]}
+				border={[, , , "1px solid white"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
@@ -52,8 +52,8 @@ export default function Skills({ scrollLevel }) {
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					borderRight={["unset", "unset", "unset", "2px solid white"]}
-					borderBottom={["2px solid white", "2px solid white", "2px solid white", "unset"]}
+					borderRight={["unset", "unset", "unset", "1px solid white"]}
+					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 				>
 					<Text color={"#12cc53"} w="90%" fontSize={"1.5em"}>
@@ -78,7 +78,7 @@ export default function Skills({ scrollLevel }) {
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
-					borderBottom={["2px solid white", "2px solid white", "2px solid white", "unset"]}
+					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
 				>
 					<Text color={"#12cc53"} fontSize={"1.5em"}>
 						Software Development
@@ -96,9 +96,9 @@ export default function Skills({ scrollLevel }) {
 					</Flex>
 				</Flex>
 				<Flex
-					borderBottom={["2px solid white", "2px solid white", "2px solid white", "unset"]}
-					borderRight={["unset", "unset", "unset", "2px solid white"]}
-					borderTop={["unset", "unset", "unset", "2px solid white"]}
+					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
+					borderRight={["unset", "unset", "unset", "1px solid white"]}
+					borderTop={["unset", "unset", "unset", "1px solid white"]}
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
@@ -122,7 +122,7 @@ export default function Skills({ scrollLevel }) {
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
-					borderTop={["unset", "unset", "unset", "2px solid white"]}
+					borderTop={["unset", "unset", "unset", "1px solid white"]}
 				>
 					<Text color={"#12cc53"} fontSize={"1.5em"}>
 						Problem Solving
