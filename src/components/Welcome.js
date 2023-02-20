@@ -1,7 +1,6 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react"
 import { useEffect, useRef, useState } from "react"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
-import { SlArrowDown } from "react-icons/sl"
 import ScrollArrow from "./ScrollArrow"
 
 export default function Welcome({ tabWidth, scrollLevel }) {
@@ -15,19 +14,24 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 		welcome.style.transition = 0
 		welcome.style.top = "-60px"
 		welcome.style.opacity = 0
-		head.style.transition = 0
-		head.style.top = "-60px"
-		head.style.opacity = 0
+		if (tabWidth > 1000) {
+			head.style.transition = 0
+			head.style.top = "-60px"
+			head.style.opacity = 0
+		}
+
 		setTimeout(() => {
 			welcome.style.transition = "2000ms cubic-bezier(0.25, 1, 0.5, 1)"
 			welcome.style.top = "0px"
 			welcome.style.opacity = 1
 		}, 200)
-		setTimeout(() => {
-			head.style.transition = "2000ms cubic-bezier(0.25, 1, 0.5, 1)"
-			head.style.top = "0px"
-			head.style.opacity = 1
-		}, 1000)
+		if (tabWidth > 1000) {
+			setTimeout(() => {
+				head.style.transition = "2000ms cubic-bezier(0.25, 1, 0.5, 1)"
+				head.style.top = "0px"
+				head.style.opacity = 1
+			}, 1000)
+		}
 		setTimeout(() => {
 			let wordLength = 0
 			for (let i = 0; i < 1; i++) {
@@ -147,6 +151,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 			boxSizing={"border-box"}
 			p={[, , , "56px 40px"]}
 			className={"welcome"}
+			marginTop={["15%", "15%", "15%", 0]}
 		>
 			<Flex
 				position={"relative"}

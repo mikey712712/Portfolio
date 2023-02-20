@@ -9,7 +9,7 @@ export default function ScrollArrow({ scrollLevel }) {
 			left="0"
 			color="white"
 			position={"absolute"}
-			bottom={scrollLevel < 30 ? "25px" : "50px"}
+			bottom={scrollLevel < 30 ? ["-25px", "-25px", "-25px", "25px"] : "50px"}
 			fontSize={"1.7em"}
 			justify={"center"}
 			w="100%"
