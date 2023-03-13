@@ -142,7 +142,7 @@ export default function Projects({ tabWidth, scrollLevel }) {
 								href="https://project-tracker-f433.onrender.com/"
 								isExternal
 							>
-								https://obscure-ocean-78390.herokuapp.com/
+								https://project-tracker-f433.onrender.com/
 							</Link>
 						</Text>
 						<Text>
