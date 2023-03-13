@@ -25,13 +25,13 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 			welcome.style.top = "0px"
 			welcome.style.opacity = 1
 		}, 200)
-		if (tabWidth > 1000) {
-			setTimeout(() => {
+		setTimeout(() => {
+			if (tabWidth > 1000) {
 				head.style.transition = "2000ms cubic-bezier(0.25, 1, 0.5, 1)"
 				head.style.top = "0px"
 				head.style.opacity = 1
-			}, 1000)
-		}
+			}
+		}, 1000)
 		setTimeout(() => {
 			let wordLength = 0
 			for (let i = 0; i < 1; i++) {
@@ -39,15 +39,12 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 				setTimeout(() => {
 					for (let node of document.querySelector(`.word${i}`).childNodes) {
 						setTimeout(() => {
-							// node.style.color = "#0ec24d"
-
 							node.style.textDecoration = "underline"
 							node.style.textDecorationThickness = "4px"
 							node.style.textDecorationColor = "#0ec24d"
 						}, letterIndex * 100)
 						setTimeout(() => {
 							node.style.color = "#ebebeb"
-							// node.style.textDecoration = "unset"
 						}, letterIndex * 100 + 450)
 						letterIndex += 1
 					}
@@ -62,14 +59,12 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 				setTimeout(() => {
 					for (let node of document.querySelector(`.word${i}`).childNodes) {
 						setTimeout(() => {
-							// node.style.color = "#0ec24d"
 							node.style.textDecoration = "underline"
 							node.style.textDecorationThickness = "4px"
 							node.style.textDecorationColor = "#0ec24d"
 						}, letterIndex * 100)
 						setTimeout(() => {
 							node.style.color = "#ebebeb"
-							// node.style.textDecoration = "unset"
 						}, letterIndex * 100 + 450)
 						letterIndex += 1
 					}
@@ -84,15 +79,12 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 				setTimeout(() => {
 					for (let node of document.querySelector(`.word${i}`).childNodes) {
 						setTimeout(() => {
-							// node.style.color = "#0ec24d"
-
 							node.style.textDecoration = "underline"
 							node.style.textDecorationThickness = "4px"
 							node.style.textDecorationColor = "#0ec24d"
 						}, letterIndex * 100)
 						setTimeout(() => {
 							node.style.color = "#ebebeb"
-							// node.style.textDecoration = "unset"
 						}, letterIndex * 100 + 450)
 						letterIndex += 1
 					}
@@ -128,11 +120,11 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 		)
 	}
 
-	const handleArrowClickLeft = () => {
-		if (activeCard > 1) {
-			setActiveCard(activeCard - 1)
-		}
-	}
+	// const handleArrowClickLeft = () => {
+	// 	if (activeCard > 1) {
+	// 		setActiveCard(activeCard - 1)
+	// 	}
+	// }
 
 	const handleArrowClickRight = () => {
 		if (activeCard < 2) {
