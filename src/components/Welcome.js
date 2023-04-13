@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react"
-import { useEffect, useRef, useState } from "react"
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
+import { useEffect, useState } from "react"
+import { AiOutlineArrowRight } from "react-icons/ai"
 import ScrollArrow from "./ScrollArrow"
 
 export default function Welcome({ tabWidth, scrollLevel }) {
@@ -126,7 +126,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 	// 	}
 	// }
 
-	const handleArrowClickRight = () => {
+	const handleArrowClick = () => {
 		if (activeCard < 2) {
 			setActiveCard(activeCard + 1)
 		} else if (activeCard > 1) {
@@ -300,9 +300,8 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							boxSizing="border-box"
 							p={"3px 10px"}
 							fontSize={"1.3em"}
-							onClick={handleArrowClickRight}
-							onTouchEnd={handleArrowClickRight}
-							marginLeft={"5px"}
+							onClick={handleArrowClick}
+							onTouchEnd={handleArrowClick}
 							_hover={{
 								bgColor: "#12cc53",
 							}}
@@ -310,7 +309,9 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							// cursor={activeCard === 1 ? "pointer" : "default"}
 							transition={"400ms"}
 						>
-							{activeCard === 1 ? <AiOutlineArrowRight /> : <AiOutlineArrowLeft />}
+							<Box transition={"2200ms cubic-bezier(0.25, 1, 0.5, 1)"} transform={activeCard === 2 ? "rotate(540deg)" : "unset"}>
+								<AiOutlineArrowRight />
+							</Box>
 						</Button>
 					</Flex>
 				</Box>

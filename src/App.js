@@ -6,6 +6,13 @@ import "./App.css"
 import Projects from "./components/Projects"
 import { useEffect, useState } from "react"
 import Contact from "./components/Contact"
+import { extendTheme } from "@chakra-ui/react"
+
+const theme = extendTheme({
+	colors: {
+		tech: "#0ec24d",
+	},
+})
 
 function App() {
 	const [tabWidth, setTabWidth] = useState(window.innerWidth)
@@ -38,7 +45,7 @@ function App() {
 	})
 
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<Box h={"100%"} maxW={"1600px"} m="0 auto" w={"100vw"} className="App">
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} scrollLevel={scrollLevel} />
