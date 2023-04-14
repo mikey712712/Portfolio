@@ -12,14 +12,11 @@ export default function Header({ tabWidth }) {
 				pixel.className = "pixel"
 				document.body.appendChild(pixel)
 				const transitionTime = `${4000 + Math.floor(Math.random() * 4000)}ms`
-				// pixel.innerText = `${Math.floor(Math.random() * 10)}`
-				// pixel.style.color = "#0ec24d"
-				// pixel.style.fontFamily = '"Sono", sans-serif'
 				pixel.style.position = "fixed"
 				pixel.style.left = e.clientX + "px"
 				pixel.style.top = e.clientY + "px"
-				pixel.style.width = "2px"
-				pixel.style.height = "6px"
+				pixel.style.width = "1px"
+				pixel.style.height = Math.ceil(Math.random() * 7) + "px"
 				pixel.style.opacity = String(0.3 + Math.random() * 0.3).slice(0, 3)
 				pixel.style.zIndex = "50"
 				pixel.style.backgroundColor = "#0ec24d"
