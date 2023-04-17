@@ -13,6 +13,7 @@ export default function Header({ tabWidth }) {
 				document.body.appendChild(pixel)
 				const transitionTime = `${4000 + Math.floor(Math.random() * 4000)}ms`
 				pixel.style.position = "fixed"
+				pixel.style.pointerEvents = "none"
 				pixel.style.left = e.clientX + "px"
 				pixel.style.top = e.clientY + "px"
 				pixel.style.width = "1px"

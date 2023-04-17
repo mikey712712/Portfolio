@@ -309,7 +309,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							// cursor={activeCard === 1 ? "pointer" : "default"}
 							transition={"400ms"}
 						>
-							<Box transition={"2200ms cubic-bezier(0.25, 1, 0.5, 1)"} transform={activeCard === 2 ? "rotate(540deg)" : "unset"}>
+							<Box transition={"600ms cubic-bezier(0.75, 1, 0.5, 1)"} transform={activeCard === 2 ? "rotate(-180deg)" : "unset"}>
 								<AiOutlineArrowRight />
 							</Box>
 						</Button>
