@@ -18,3 +18,7 @@ html {
 .postgres-icon {
 	margin-right: 5px;
 }
+
+body::-webkit-scrollbar {
+	display: none;
+}
