@@ -68,6 +68,7 @@ export default function Header({ tabWidth }) {
 					backdropFilter={"blur(4px)"}
 					className="header"
 					zIndex={"300"}
+					left={"0"}
 					// boxShadow="-5px 5px 80px 0 #191414"
 				>
 					<Flex cursor="pointer" position="absolute" left="25px">
