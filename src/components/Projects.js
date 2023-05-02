@@ -139,7 +139,7 @@ export default function Projects({ tabWidth, scrollLevel }) {
 								_hover={{
 									color: "#12cc53",
 								}}
-								href="https://project-tracker-f433.onrender.com/"
+								href="https://project-tracker-web.up.railway.app/"
 								isExternal
 							>
 								https://project-tracker-f433.onrender.com/
