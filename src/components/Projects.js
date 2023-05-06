@@ -159,7 +159,7 @@ export default function Projects() {
 								href="https://project-tracker-web.up.railway.app/"
 								isExternal
 							>
-								https://project-tracker-f433.onrender.com/
+								https://project-tracker-web.up.railway.app/
 							</Link>
 						</Text>
 						<Text>
