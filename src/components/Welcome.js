@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { AiOutlineArrowRight } from "react-icons/ai"
 import ScrollArrow from "./ScrollArrow"
 
-export default function Welcome({ tabWidth, scrollLevel }) {
+export default function Welcome({ tabWidth }) {
 	const title = "Hi, I'm Michael Holton. Welcome to my portfolio."
 	const [activeCard, setActiveCard] = useState(1)
 
@@ -96,27 +96,35 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 
 	const WelcomeMessage = ({ message, index }) => {
 		return (
-			<Flex className={`word${index}`} position={"relative"} marginRight={["14px", "16px", , "30px"]} flexFlow={"row nowrap"}>
-				{message.split("").map((char, i) => {
-					return (
-						<Heading
-							fontWeight={"300"}
-							transition={"400ms"}
-							color="#ebebeb"
-							fontSize={["2em", "3em", "4em"]}
-							cursor={"default"}
-							className="welcome-char"
-							fontFamily={"Sono, sans-serif"}
-							key={i}
-							textDecoration="underline"
-							textDecorationThickness="4px"
-							textDecorationColor="#0ec24d"
-						>
-							{char}
-						</Heading>
-					)
-				})}
-			</Flex>
+			<>
+				<Flex
+					className={`word${index}`}
+					position={"relative"}
+					marginRight={index < 2 || index > 3 ? "8px" : ["14px", "16px", , "30px"]}
+					flexFlow={"row nowrap"}
+				>
+					{message.split("").map((char, i) => {
+						return (
+							<Heading
+								fontWeight={"300"}
+								transition={"400ms"}
+								color="#ebebeb"
+								cursor={"default"}
+								fontSize={index < 2 || index > 3 ? ["1em", "1.5em", "2em"] : ["2em", "3em", "4em"]}
+								className="welcome-char"
+								fontFamily={"Sono, sans-serif"}
+								key={i}
+								textDecoration="underline"
+								textDecorationThickness="4px"
+								textDecorationColor="#0ec24d"
+							>
+								{char}
+							</Heading>
+						)
+					})}
+				</Flex>
+				{index === 3 || index === 1 ? <Box flexBasis={"100%"} h="0" /> : null}
+			</>
 		)
 	}
 
@@ -141,7 +149,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 			h={["fit-content", "fit-content", "fit-content", "100vh"]}
 			minH={["unset", "unset", "unset", "800px"]}
 			boxSizing={"border-box"}
-			p={[, , , "56px 40px"]}
+			p={[, , , "56px 80px"]}
 			className={"welcome"}
 			marginTop={["15%", "15%", "15%", 0]}
 		>
@@ -158,10 +166,10 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 					justify="center"
 					boxSizing="border-box"
 					w={["100%", "100%", "100%", "55%"]}
-					p={["10px", "10px", "10px", "5px"]}
+					p={["10px 30px", "10px 30px", "10px 30px", "5px"]}
 					h={["fit-content", "fit-content", "fit-content", "100%"]}
 				>
-					<Flex flexFlow={"row wrap"} justify="center">
+					<Flex flexFlow={"row wrap"} justify="flex-start">
 						{title.split(" ").map((word, i) => (
 							<WelcomeMessage key={i} message={word} index={i} />
 						))}
@@ -181,7 +189,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 						bottom="23%"
 						h={["300px", "260px", "280px", "50%"]}
 						w={["90%", "90%", "90%", "450px"]}
-						bgColor={activeCard === 1 ? "rgba(255,255,255,0.7)" : "gray"}
+						bgColor={activeCard === 1 ? "rgba(255,255,255,0.2)" : "gray"}
 						transformOrigin="bottom"
 						transform={[, , , "rotate(-6deg)"]}
 						marginLeft={[, , , "-225px"]}
@@ -189,7 +197,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 						boxSizing="border-box"
 						p="2px"
 						transition="400ms"
-						boxShadow={activeCard === 1 ? "-5px 5px 80px 0 gray" : ""}
+						// boxShadow={activeCard === 1 ? "-5px 5px 40px 0 gray" : ""}
 					>
 						<Box
 							transition="400ms"
@@ -211,7 +219,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							</Text>
 							<br />
 							<Text fontSize={"1.2em"} color="white" fontWeight={"300"}>
-								Since 2019 I've been studying Aerospace Engineering at The University of New South Wales while working in logistics.
+								From 2019-2022 I studied Aerospace Engineering at The University of New South Wales while working in logistics.
 							</Text>
 						</Box>
 					</Box>
@@ -222,7 +230,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 						bottom="23%"
 						h={["300px", "260px", "280px", "50%"]}
 						w={["90%", "90%", "90%", "450px"]}
-						bgColor={activeCard === 2 ? "rgba(255,255,255,0.7)" : "gray"}
+						bgColor={activeCard === 2 ? "rgba(255,255,255,0.2)" : "gray"}
 						transformOrigin="bottom"
 						transform={[, , , "rotate(6deg)"]}
 						marginLeft={[, , , "-225px"]}
@@ -230,7 +238,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 						boxSizing="border-box"
 						p="2px"
 						transition="400ms"
-						boxShadow={activeCard === 2 ? "-5px 5px 80px 0 gray" : ""}
+						// boxShadow={activeCard === 2 ? "-5px 5px 40px 0 gray" : ""}
 					>
 						<Box
 							transition="400ms"
@@ -241,7 +249,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							h="100%"
 							opacity={activeCard === 2 ? "100%" : "0"}
 							boxSizing={"border-box"}
-							p="10px 20px 10px 10px"
+							p="10px 40px 10px 10px"
 							fontSize={["0.8em", , "1em"]}
 						>
 							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"400"} marginBottom={"10px"}>
@@ -249,8 +257,8 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							</Heading>
 							<Text fontSize={"1.2em"} color="white" fontWeight={"300"}>
 								Having developed a passion for the tech industry and it's innovative potential, I transitioned my career focus towards software
-								engineering, completed a 12 week software engineering bootcamp at General Assembly and am now eager to begin working in the
-								industry!
+								engineering, completed a 12 week software engineering bootcamp at General Assembly, and have spent the time since refining my
+								skills.
 							</Text>
 						</Box>
 					</Box>
@@ -308,6 +316,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 							// opacity={activeCard === 1 ? "1" : "0"}
 							// cursor={activeCard === 1 ? "pointer" : "default"}
 							transition={"400ms"}
+							zIndex={"100"}
 						>
 							<Box transition={"600ms cubic-bezier(0.75, 1, 0.5, 1)"} transform={activeCard === 2 ? "rotate(-180deg)" : "unset"}>
 								<AiOutlineArrowRight />
@@ -316,7 +325,7 @@ export default function Welcome({ tabWidth, scrollLevel }) {
 					</Flex>
 				</Box>
 			</Flex>
-			<ScrollArrow scrollLevel={scrollLevel} />
+			<ScrollArrow />
 		</Flex>
 	)
 }

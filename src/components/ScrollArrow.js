@@ -1,15 +1,21 @@
 import { Flex } from "@chakra-ui/react"
+import { useState } from "react"
 import { SlArrowDown } from "react-icons/sl"
+import { useInView } from "react-intersection-observer"
 
-export default function ScrollArrow({ scrollLevel }) {
+export default function ScrollArrow() {
+	const { ref, inView } = useInView({
+		threshold: 1,
+	})
 	return (
 		<Flex
-			opacity={scrollLevel < 30 ? 1 : 0}
-			cursor={scrollLevel < 30 ? "pointer" : "default"}
+			ref={ref}
+			opacity={inView ? 1 : 0}
+			cursor={inView ? "pointer" : "default"}
 			left="0"
 			color="white"
 			position={"absolute"}
-			bottom={scrollLevel < 30 ? ["-25px", "-25px", "-25px", "25px"] : "50px"}
+			bottom={inView ? ["-25px", "-25px", "-25px", "25px"] : "50px"}
 			fontSize={"1.7em"}
 			justify={"center"}
 			w="100%"
@@ -18,13 +24,11 @@ export default function ScrollArrow({ scrollLevel }) {
 		>
 			<SlArrowDown
 				onClick={() => {
-					if (scrollLevel < 30) {
-						window.scrollTo({
-							top: window.innerHeight - 40,
-							left: 0,
-							behavior: "smooth",
-						})
-					}
+					window.scrollTo({
+						top: window.innerHeight - 40,
+						left: 0,
+						behavior: "smooth",
+					})
 				}}
 			/>
 		</Flex>

@@ -2,52 +2,52 @@ import { Button, Checkbox, Flex, Input, TagLabel, Text } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 
 export default function Header({ tabWidth }) {
-	const [cursorTrail, setCursorTrail] = useState(true)
+	// const [cursorTrail, setCursorTrail] = useState(true)
 
-	useEffect(() => {
-		console.log(cursorTrail)
-		const cursorRain = (e) => {
-			if (cursorTrail) {
-				const pixel = document.createElement("div")
-				pixel.className = "pixel"
-				document.body.appendChild(pixel)
-				const transitionTime = `${4000 + Math.floor(Math.random() * 4000)}ms`
-				pixel.style.position = "fixed"
-				pixel.style.pointerEvents = "none"
-				pixel.style.left = e.clientX + "px"
-				pixel.style.top = e.clientY + "px"
-				pixel.style.width = "1px"
-				pixel.style.height = Math.ceil(Math.random() * 7) + "px"
-				pixel.style.opacity = String(0.3 + Math.random() * 0.3).slice(0, 3)
-				pixel.style.zIndex = "50"
-				pixel.style.backgroundColor = "#0ec24d"
-				pixel.style.transition = transitionTime
-				pixel.style.borderRadius = "2px"
+	// useEffect(() => {
+	// 	console.log(cursorTrail)
+	// 	const cursorRain = (e) => {
+	// 		if (cursorTrail) {
+	// 			const pixel = document.createElement("div")
+	// 			pixel.className = "pixel"
+	// 			document.body.appendChild(pixel)
+	// 			const transitionTime = `${4000 + Math.floor(Math.random() * 4000)}ms`
+	// 			pixel.style.position = "fixed"
+	// 			pixel.style.pointerEvents = "none"
+	// 			pixel.style.left = e.clientX + "px"
+	// 			pixel.style.top = e.clientY + "px"
+	// 			pixel.style.width = "1px"
+	// 			pixel.style.height = Math.ceil(Math.random() * 7) + "px"
+	// 			pixel.style.opacity = String(0.3 + Math.random() * 0.3).slice(0, 3)
+	// 			pixel.style.zIndex = "50"
+	// 			pixel.style.backgroundColor = "#0ec24d"
+	// 			pixel.style.transition = transitionTime
+	// 			pixel.style.borderRadius = "2px"
 
-				setTimeout(() => {
-					pixel.style.top = window.screen.height + "px"
-				}, 50)
-				setTimeout(() => {
-					pixel.remove()
-				}, Number(transitionTime.slice(0, 4)) + 50)
-			}
-		}
-		if (cursorTrail) {
-			document.addEventListener("mousemove", cursorRain)
-		}
-		return () => {
-			document.removeEventListener("mousemove", cursorRain)
-		}
-	}, [cursorTrail])
+	// 			setTimeout(() => {
+	// 				pixel.style.top = window.screen.height + "px"
+	// 			}, 50)
+	// 			setTimeout(() => {
+	// 				pixel.remove()
+	// 			}, Number(transitionTime.slice(0, 4)) + 50)
+	// 		}
+	// 	}
+	// 	if (cursorTrail) {
+	// 		document.addEventListener("mousemove", cursorRain)
+	// 	}
+	// 	return () => {
+	// 		document.removeEventListener("mousemove", cursorRain)
+	// 	}
+	// }, [cursorTrail])
 
-	const handleCheckBox = (e) => {
-		console.log(e.target.checked)
-		if (e.target.checked) {
-			setCursorTrail(true)
-		} else {
-			setCursorTrail(false)
-		}
-	}
+	// const handleCheckBox = (e) => {
+	// 	console.log(e.target.checked)
+	// 	if (e.target.checked) {
+	// 		setCursorTrail(true)
+	// 	} else {
+	// 		setCursorTrail(false)
+	// 	}
+	// }
 
 	return (
 		<>
@@ -71,7 +71,7 @@ export default function Header({ tabWidth }) {
 					left={"0"}
 					// boxShadow="-5px 5px 80px 0 #191414"
 				>
-					<Flex cursor="pointer" position="absolute" left="25px">
+					{/* <Flex cursor="pointer" position="absolute" left="25px">
 						<Checkbox
 							type="radio"
 							onChange={handleCheckBox}
@@ -84,7 +84,7 @@ export default function Header({ tabWidth }) {
 						>
 							<Text fontSize={"0.8em"}>Cursor Trail</Text>
 						</Checkbox>
-					</Flex>
+					</Flex> */}
 					<Flex
 						_hover={{
 							color: "#12cc53",

@@ -7,6 +7,7 @@ import Projects from "./components/Projects"
 import { useEffect, useState } from "react"
 import Contact from "./components/Contact"
 import { extendTheme } from "@chakra-ui/react"
+import Background from "./components/Background"
 
 const theme = extendTheme({
 	colors: {
@@ -28,30 +29,16 @@ function App() {
 			window.removeEventListener("resize", setResize)
 		}
 	})
-	const [scrollLevel, setScrollLevel] = useState(window.scrollY)
-
-	function logit() {
-		setScrollLevel(window.pageYOffset)
-	}
-
-	useEffect(() => {
-		function watchScroll() {
-			window.addEventListener("scroll", logit)
-		}
-		watchScroll()
-		return () => {
-			window.removeEventListener("scroll", logit)
-		}
-	})
 
 	return (
 		<ChakraProvider theme={theme}>
+			<Background />
 			<Box h={"100%"} maxW={"1600px"} m="0 auto" w={"100vw"} className="App">
 				<Header tabWidth={tabWidth} />
-				<Welcome tabWidth={tabWidth} scrollLevel={scrollLevel} />
-				<Skills scrollLevel={scrollLevel} />
-				<Projects tabWidth={tabWidth} scrollLevel={scrollLevel} />
-				<Contact scrollLevel={scrollLevel} />
+				<Welcome tabWidth={tabWidth} />
+				<Skills />
+				<Projects tabWidth={tabWidth} />
+				<Contact />
 			</Box>
 		</ChakraProvider>
 	)

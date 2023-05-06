@@ -1,17 +1,25 @@
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react"
+import { useInView } from "react-intersection-observer"
 
-export default function Contact({ scrollLevel }) {
+export default function Contact() {
+	const { ref, inView } = useInView({
+		threshold: 0,
+	})
 	return (
 		<Flex
-			opacity={scrollLevel > document.querySelector("#root").scrollHeight - 1.2 * window.innerHeight ? 1 : 0}
-			// top={scrollLevel > document.querySelector("#root").scrollHeight - 1.4 * window.innerHeight ? "80px" : "0"}
+			ref={ref}
+			opacity={inView ? 1 : 0}
+			top={inView ? "0" : "-40px"}
 			transition={"800ms"}
 			position={"relative"}
-			m={["0", , , "150px 0"]}
+			// m={["0", , , "150px 0"]}
+			p={["0", , , "0 0 100px 0"]}
 			w={"100%"}
 			h={"fit-content"}
 			boxSizing={"border-box"}
+			zIndex={"100"}
 			id="contact"
+			bgColor={"#191414"}
 		>
 			<Flex
 				position={"relative"}

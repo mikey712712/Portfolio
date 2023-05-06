@@ -1,23 +1,36 @@
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react"
-import { useEffect, useState } from "react"
+import { useInView } from "react-intersection-observer"
 
-export default function Projects({ tabWidth, scrollLevel }) {
-	const [containerHeight, setContainerHeight] = useState(null)
-	useEffect(() => {
-		setContainerHeight(document.querySelector("#projects").scrollHeight)
-	}, [tabWidth])
+export default function Projects() {
+	// const [containerHeight, setContainerHeight] = useState(null)
+	// useEffect(() => {
+	// 	setContainerHeight(document.querySelector("#projects").scrollHeight)
+	// }, [tabWidth])
+	const { ref: mainRef, inView: mainInView } = useInView({
+		threshold: 0,
+	})
+	const { ref: firstRef, inView: firstInView } = useInView({
+		threshold: 0,
+	})
+	const { ref: secondRef, inView: secondInView } = useInView({
+		threshold: 0,
+	})
+	const { ref: thirdRef, inView: thirdInView } = useInView({
+		threshold: 0,
+	})
 	return (
 		<Flex
-			opacity={scrollLevel > window.innerHeight ? 1 : 0}
-			top={scrollLevel > window.innerHeight ? "80px" : "0"}
+			ref={mainRef}
+			opacity={mainInView ? 1 : 0}
 			transition={"800ms"}
 			position={"relative"}
-			m={["0", , , "150px 0"]}
 			w={"100%"}
 			h={"fit-content"}
 			boxSizing={"border-box"}
 			id="projects"
 			scrollMarginTop={"30px"}
+			zIndex={"100"}
+			bgColor={"#191414"}
 		>
 			<Flex
 				position={"relative"}
@@ -38,15 +51,17 @@ export default function Projects({ tabWidth, scrollLevel }) {
 					Projects
 				</Text>
 				<Flex
-					opacity={[1, , , scrollLevel > window.innerHeight + containerHeight / 4 ? 1 : 0]}
+					ref={firstRef}
+					opacity={[1, , , firstInView ? 1 : 0]}
 					transition={"1000ms"}
 					position={"relative"}
 					p={[, , , "0 0 0 15px"]}
-					m="0 0 65px 0"
+					m="10px 0 50px 0"
 					h="fit-content"
 					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
 				>
 					<Image
+						zIndex={"150"}
 						border={"2px solid rgba(255,255,255,1)"}
 						borderRadius={"15px"}
 						src={"./images/quickchat.png"}
@@ -54,8 +69,8 @@ export default function Projects({ tabWidth, scrollLevel }) {
 						h={[, , , "100%"]}
 						objectFit={"fill"}
 						filter={"brightness(85%) blur(0.4px)"}
-						m={["15px 0 15px 0", , , "0"]}
-						alignSelf="center"
+						m={["15px 0 15px 0", , , "15px 0 15px 0"]}
+						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
 						<Text color={"#12cc53"} fontSize={"1.7em"}>
@@ -100,14 +115,16 @@ export default function Projects({ tabWidth, scrollLevel }) {
 					</Box>
 				</Flex>
 				<Flex
-					opacity={[1, , , scrollLevel > window.innerHeight + containerHeight / 2 ? 1 : 0]}
+					ref={secondRef}
+					opacity={[1, , , secondInView ? 1 : 0]}
 					transition={"1200ms"}
 					p={[, , , "0 0 0 15px"]}
-					m="0 0 65px 0"
+					m="0 0 90px 0"
 					h="fit-content"
 					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
 				>
 					<Image
+						zIndex={"150"}
 						border={"2px solid rgba(255,255,255,1)"}
 						borderRadius={"15px"}
 						src={"./images/projecttracker.png"}
@@ -115,8 +132,8 @@ export default function Projects({ tabWidth, scrollLevel }) {
 						h={[, , , "100%"]}
 						objectFit={"fill"}
 						filter={"brightness(85%) blur(0.4px)"}
-						m={["15px 0 15px 0", , , "0"]}
-						alignSelf="center"
+						m={["15px 0 15px 0", , , "15px 0 15px 0"]}
+						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
 						<Text color={"#12cc53"} fontSize={"1.7em"}>
@@ -160,14 +177,16 @@ export default function Projects({ tabWidth, scrollLevel }) {
 					</Box>
 				</Flex>
 				<Flex
-					opacity={[1, , , scrollLevel > window.innerHeight + containerHeight * (3 / 4) ? 1 : 0]}
+					ref={thirdRef}
+					opacity={[1, , , thirdInView ? 1 : 0]}
 					transition={"1300ms"}
 					p={[, , , "0 0 0 15px"]}
-					m="0 0 65px 0"
+					m="0 0 50px 0"
 					h="fit-content"
 					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
 				>
 					<Image
+						zIndex={"150"}
 						border={"2px solid rgba(255,255,255,1)"}
 						borderRadius={"15px"}
 						src={"./images/tictactoe.png"}
@@ -175,7 +194,7 @@ export default function Projects({ tabWidth, scrollLevel }) {
 						h={[, , , "100%"]}
 						objectFit={"fill"}
 						filter={"brightness(85%) blur(0.4px)"}
-						m={["15px 0 15px 0", , , "0"]}
+						m={["15px 0 15px 0", , , "15px 0 15px 0"]}
 						alignSelf="center"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>

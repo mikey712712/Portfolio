@@ -17,12 +17,20 @@ import {
 import { AiFillHtml5 } from "react-icons/ai"
 import { ImEmbed2 } from "react-icons/im"
 import { TbMathFunction } from "react-icons/tb"
-export default function Skills({ scrollLevel }) {
+import { useInView } from "react-intersection-observer"
+export default function Skills() {
+	const { ref, inView } = useInView({
+		threshold: 0.2,
+	})
 	return (
 		<Flex
-			opacity={scrollLevel > 70 ? 1 : 0}
-			top={scrollLevel > 70 ? "80px" : "0"}
+			ref={ref}
+			opacity={inView ? 1 : 0}
+			margin={"40px 0 140px 0"}
+			// top={inView ? "80px" : "0"}
+			zIndex={"100"}
 			position={"relative"}
+			bgColor={"#191414"}
 			transition={"800ms"}
 			w={"100%"}
 			h={"fit-content"}
