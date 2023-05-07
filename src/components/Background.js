@@ -41,13 +41,15 @@ export default function Background() {
 			position={"fixed"}
 			top={"0"}
 			pt="30px"
-			left={"0"}
+			left={"50%"}
+			transform={"translateX(-50%)"}
 			height={"100vh"}
 			width={"100vw"}
 			templateColumns={"repeat(4, 1fr)"}
 			templateRows={"repeat(3, 1fr)"}
 			color="#12cc53"
 			zIndex={"50"}
+			maxW={"1600px"}
 		>
 			<GridItem
 				transition={shownIcons.fr ? "100ms" : "1200ms"}

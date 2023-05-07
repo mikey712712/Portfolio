@@ -53,8 +53,9 @@ export default function Projects() {
 				<Flex
 					ref={firstRef}
 					opacity={[1, , , firstInView ? 1 : 0]}
-					transition={"1000ms"}
+					right={["0", , , firstInView ? 0 : "50px"]}
 					position={"relative"}
+					transition={"1000ms"}
 					p={[, , , "0 0 0 15px"]}
 					m="10px 0 50px 0"
 					h="fit-content"
@@ -117,10 +118,12 @@ export default function Projects() {
 				<Flex
 					ref={secondRef}
 					opacity={[1, , , secondInView ? 1 : 0]}
+					right={["0", , , secondInView ? 0 : "50px"]}
+					position={"relative"}
 					transition={"1200ms"}
 					p={[, , , "0 0 0 15px"]}
-					m="0 0 90px 0"
-					h="fit-content"
+					m={"0 0 90px 0"}
+					h={"fit-content"}
 					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
 				>
 					<Image
@@ -179,6 +182,8 @@ export default function Projects() {
 				<Flex
 					ref={thirdRef}
 					opacity={[1, , , thirdInView ? 1 : 0]}
+					right={["0", , , thirdInView ? 0 : "50px"]}
+					position={"relative"}
 					transition={"1300ms"}
 					p={[, , , "0 0 0 15px"]}
 					m="0 0 50px 0"
