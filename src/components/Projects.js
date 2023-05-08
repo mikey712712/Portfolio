@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Link, Text } from "@chakra-ui/react"
+import { Box, Flex, grid, Image, Link, Text } from "@chakra-ui/react"
 import { useInView } from "react-intersection-observer"
 
 export default function Projects() {
@@ -6,22 +6,25 @@ export default function Projects() {
 	// useEffect(() => {
 	// 	setContainerHeight(document.querySelector("#projects").scrollHeight)
 	// }, [tabWidth])
-	const { ref: mainRef, inView: mainInView } = useInView({
+	const { ref: containerRef, inView: containerInView } = useInView({
 		threshold: 0,
 	})
-	const { ref: firstRef, inView: firstInView } = useInView({
+	const { ref: quickchatRef, inView: quickchatInView } = useInView({
 		threshold: 0,
 	})
-	const { ref: secondRef, inView: secondInView } = useInView({
+	const { ref: gridfightRef, inView: gridfightInView } = useInView({
 		threshold: 0,
 	})
-	const { ref: thirdRef, inView: thirdInView } = useInView({
+	const { ref: crudRef, inView: crudInView } = useInView({
+		threshold: 0,
+	})
+	const { ref: tictactoeRef, inView: tictactoeInView } = useInView({
 		threshold: 0,
 	})
 	return (
 		<Flex
-			ref={mainRef}
-			opacity={mainInView ? 1 : 0}
+			ref={containerRef}
+			opacity={containerInView ? 1 : 0}
 			transition={"800ms"}
 			position={"relative"}
 			w={"100%"}
@@ -51,9 +54,9 @@ export default function Projects() {
 					Projects
 				</Text>
 				<Flex
-					ref={firstRef}
-					opacity={[1, , , firstInView ? 1 : 0]}
-					right={["0", , , firstInView ? 0 : "50px"]}
+					ref={quickchatRef}
+					opacity={quickchatInView ? 1 : 0}
+					right={quickchatInView ? 0 : "50px"}
 					position={"relative"}
 					transition={"1000ms"}
 					p={[, , , "0 0 0 15px"]}
@@ -63,7 +66,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,1)"}
+						border={"2px solid rgba(255,255,255,0.6)"}
 						borderRadius={"15px"}
 						src={"./images/quickchat.png"}
 						w={["100%", , , "40%"]}
@@ -116,9 +119,73 @@ export default function Projects() {
 					</Box>
 				</Flex>
 				<Flex
-					ref={secondRef}
-					opacity={[1, , , secondInView ? 1 : 0]}
-					right={["0", , , secondInView ? 0 : "50px"]}
+					ref={gridfightRef}
+					opacity={gridfightInView ? 1 : 0}
+					right={gridfightInView ? 0 : "50px"}
+					position={"relative"}
+					transition={"1000ms"}
+					p={[, , , "0 0 0 15px"]}
+					m="10px 0 50px 0"
+					h="fit-content"
+					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
+				>
+					<Image
+						zIndex={"150"}
+						border={"2px solid rgba(255,255,255,0.6)"}
+						borderRadius={"15px"}
+						src={"./images/gridfight.png"}
+						w={["100%", , , "40%"]}
+						h={[, , , "100%"]}
+						objectFit={"fill"}
+						filter={"brightness(85%) blur(0.4px)"}
+						m={["15px 0 15px 0", , , "15px 0 15px 0"]}
+						alignSelf="flex-start"
+					/>
+					<Box p={[, , , "0 0 0 25px"]}>
+						<Text color={"#12cc53"} fontSize={"1.7em"}>
+							Grid Fight
+						</Text>
+						<Text m="0 0 15px 0">
+							<strong>Description:</strong> Grid Fight is a full-stack single-page web game where two players fight on a checkered board using
+							different characters and abilities. Users can play against each other either locally or online.
+						</Text>
+						<Text m="0 0 15px 0">
+							<strong>Technologies:</strong> The frontend of the game was created using ReactJS, using Chakra-UI for CSS. All of the data is
+							stored as React states which stay synchronised during online play through the use of Firebase's Realtime Database. Users can create
+							lobbies which generate new collections in the database corresponding to the generated room ID, their opponent can then join using
+							the room ID to initiate the game. When it's a user's turn, their actions write which functions are called to the database, the
+							opponent's client listens for changes in the database and runs the same functions on their end. The app is deployed through Netlify.
+						</Text>
+						<Text>
+							<strong>Deployed Site: </strong>
+							<Link
+								_hover={{
+									color: "#12cc53",
+								}}
+								href="https://grid-fight-2022.netlify.app/"
+								isExternal
+							>
+								https://grid-fight-2022.netlify.app
+							</Link>
+						</Text>
+						<Text>
+							<strong>Github Repository: </strong>
+							<Link
+								_hover={{
+									color: "#12cc53",
+								}}
+								href="https://github.com/mikey712712/Grid-Fight"
+								isExternal
+							>
+								https://github.com/mikey712712/Grid-Fight
+							</Link>
+						</Text>
+					</Box>
+				</Flex>
+				<Flex
+					ref={crudRef}
+					opacity={crudInView ? 1 : 0}
+					right={crudInView ? 0 : "50px"}
 					position={"relative"}
 					transition={"1200ms"}
 					p={[, , , "0 0 0 15px"]}
@@ -128,7 +195,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,1)"}
+						border={"2px solid rgba(255,255,255,0.6)"}
 						borderRadius={"15px"}
 						src={"./images/projecttracker.png"}
 						w={["100%", , , "40%"]}
@@ -180,9 +247,9 @@ export default function Projects() {
 					</Box>
 				</Flex>
 				<Flex
-					ref={thirdRef}
-					opacity={[1, , , thirdInView ? 1 : 0]}
-					right={["0", , , thirdInView ? 0 : "50px"]}
+					ref={tictactoeRef}
+					opacity={tictactoeInView ? 1 : 0}
+					right={tictactoeInView ? 0 : "50px"}
 					position={"relative"}
 					transition={"1300ms"}
 					p={[, , , "0 0 0 15px"]}
@@ -192,7 +259,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,1)"}
+						border={"2px solid rgba(255,255,255,0.6)"}
 						borderRadius={"15px"}
 						src={"./images/tictactoe.png"}
 						w={["100%", , , "40%"]}

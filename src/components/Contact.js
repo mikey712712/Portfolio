@@ -3,13 +3,12 @@ import { useInView } from "react-intersection-observer"
 
 export default function Contact() {
 	const { ref, inView } = useInView({
-		threshold: 0,
+		threshold: 0.5,
 	})
 	return (
 		<Flex
 			ref={ref}
 			opacity={inView ? 1 : 0}
-			top={inView ? "0" : "-40px"}
 			transition={"800ms"}
 			position={"relative"}
 			// m={["0", , , "150px 0"]}
