@@ -125,7 +125,7 @@ export default function Projects() {
 					position={"relative"}
 					transition={"1000ms"}
 					p={[, , , "0 0 0 15px"]}
-					m="10px 0 50px 0"
+					m="0 0 50px 0"
 					h="fit-content"
 					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
 				>
@@ -152,9 +152,9 @@ export default function Projects() {
 						<Text m="0 0 15px 0">
 							<strong>Technologies:</strong> The frontend of the game was created using ReactJS, using Chakra-UI for CSS. All of the data is
 							stored as React states which stay synchronised during online play through the use of Firebase's Realtime Database. Users can create
-							lobbies which generate new collections in the database corresponding to the generated room ID, their opponent can then join using
-							the room ID to initiate the game. When it's a user's turn, their actions write which functions are called to the database, the
-							opponent's client listens for changes in the database and runs the same functions on their end. The app is deployed through Netlify.
+							lobbies which generate collections in the database, their opponent can then join using the room ID to initiate the game. When it's a
+							user's turn, their actions write which functions are called to the database, the opponent's client listens for changes in the
+							database and runs the same functions on their end. The app is deployed through Netlify.
 						</Text>
 						<Text>
 							<strong>Deployed Site: </strong>
@@ -189,7 +189,7 @@ export default function Projects() {
 					position={"relative"}
 					transition={"1200ms"}
 					p={[, , , "0 0 0 15px"]}
-					m={"0 0 90px 0"}
+					m={"0 0 50px 0"}
 					h={"fit-content"}
 					flexFlow={["column-reverse nowrap", , , "row nowrap"]}
 				>
