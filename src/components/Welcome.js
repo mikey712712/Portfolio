@@ -201,8 +201,8 @@ export default function Welcome({ tabWidth }) {
 					>
 						<Box
 							transition="400ms"
-							bgColor="#191414"
-							color={"#12cc53"}
+							bgColor="#212428"
+							color={"#00bb00"}
 							w="100%"
 							h="100%"
 							borderRadius="8px"
@@ -242,8 +242,8 @@ export default function Welcome({ tabWidth }) {
 					>
 						<Box
 							transition="400ms"
-							bgColor="#191414"
-							color={"#12cc53"}
+							bgColor="#212428"
+							color={"#00bb00"}
 							borderRadius="8px"
 							w="100%"
 							h="100%"
@@ -269,7 +269,7 @@ export default function Welcome({ tabWidth }) {
 								w={"8px"}
 								h={"8px"}
 								marginRight={"5px"}
-								backgroundColor={activeCard === 1 ? "#12cc53" : null}
+								backgroundColor={activeCard === 1 ? "#00bb00" : null}
 								borderRadius={"4px"}
 								border={"1px solid white"}
 								transition={"400ms"}
@@ -278,7 +278,7 @@ export default function Welcome({ tabWidth }) {
 								w={"8px"}
 								h={"8px"}
 								marginLeft={"5px"}
-								backgroundColor={activeCard === 2 ? "#12cc53" : null}
+								backgroundColor={activeCard === 2 ? "#00bb00" : null}
 								borderRadius={"4px"}
 								border={"1px solid white"}
 								transition={"400ms"}
@@ -294,7 +294,7 @@ export default function Welcome({ tabWidth }) {
 							marginRight={"5px"}
 							onTouchEnd={handleArrowClickLeft}
 							_hover={{
-								bgColor: "#12cc53",
+								bgColor: "#00bb00",
 							}}
 							opacity={activeCard === 2 ? "1" : "0"}
 							cursor={activeCard === 2 ? "pointer" : "default"}
@@ -311,7 +311,7 @@ export default function Welcome({ tabWidth }) {
 							onClick={handleArrowClick}
 							onTouchEnd={handleArrowClick}
 							_hover={{
-								bgColor: "#12cc53",
+								bgColor: "#00bb00",
 							}}
 							// opacity={activeCard === 1 ? "1" : "0"}
 							// cursor={activeCard === 1 ? "pointer" : "default"}

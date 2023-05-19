@@ -30,7 +30,7 @@ export default function Skills() {
 			// top={inView ? "80px" : "0"}
 			zIndex={"100"}
 			position={"relative"}
-			bgColor={"#191414"}
+			bgColor={"#212428"}
 			transition={"800ms"}
 			w={"100%"}
 			h={"fit-content"}
@@ -64,14 +64,14 @@ export default function Skills() {
 					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 				>
-					<Text color={"#12cc53"} w="90%" fontSize={"1.5em"}>
+					<Text color={"#00ff00"} w="90%" fontSize={"1.5em"}>
 						Frontend Design
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
 						Experienced in JavaScript, HTML, CSS and single-page/multi-page app development using JavaScript frameworks such as ReactJS/Vite.
 						Passionate about interactive UI design, experienced with CSS libraries such as Chakra-UI and Bootstrap.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#12cc53" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiCss3 />
 						<SiJavascript />
 						<AiFillHtml5 fontSize={"1.3em"} />
@@ -88,14 +88,14 @@ export default function Skills() {
 					w={["100%", "100%", "100%", "50%"]}
 					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
 				>
-					<Text color={"#12cc53"} fontSize={"1.5em"}>
+					<Text color={"#00ff00"} fontSize={"1.5em"}>
 						Software Development
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
 						Strong understanding of various tools for functional and OOP including Python, Flask, Node.js, Express.js, EJS, MATLAB. Proficient in
 						source control methodologies using git.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#12cc53" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiPython />
 						<SiFlask />
 						<SiNodedotjs />
@@ -112,14 +112,14 @@ export default function Skills() {
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
 				>
-					<Text color={"#12cc53"} fontSize={"1.5em"}>
+					<Text color={"#00ff00"} fontSize={"1.5em"}>
 						Database Management
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
 						Familiar with the use of both relational and non-relational databases such as PostgreSQL, Firebase (Firestore, RealtimeDB,
 						Authentication), MongoDB/MongoDB Atlas.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#12cc53" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiPostgresql className="postgres-icon" />
 						<SiFirebase />
 						<SiMongodb />
@@ -132,14 +132,14 @@ export default function Skills() {
 					w={["100%", "100%", "100%", "50%"]}
 					borderTop={["unset", "unset", "unset", "1px solid white"]}
 				>
-					<Text color={"#12cc53"} fontSize={"1.5em"}>
+					<Text color={"#00ff00"} fontSize={"1.5em"}>
 						Problem Solving
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
 						Extensive background in problem solving with a strong capability to apply creative, analytical, critical-thinking, and research skills
 						to identify a problem and pick the best of all possible solutions. Very comfortable in dealing with mathematical problems.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#12cc53" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<FaWrench fontSize={"0.9em"} />
 						<TbMathFunction />
 					</Flex>

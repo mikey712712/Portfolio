@@ -47,7 +47,7 @@ export default function Background() {
 			width={"100vw"}
 			templateColumns={"repeat(4, 1fr)"}
 			templateRows={"repeat(3, 1fr)"}
-			color="#12cc53"
+			color="#00ff00"
 			zIndex={"50"}
 			maxW={"1600px"}
 		>

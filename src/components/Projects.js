@@ -33,7 +33,7 @@ export default function Projects() {
 			id="projects"
 			scrollMarginTop={"30px"}
 			zIndex={"100"}
-			bgColor={"#191414"}
+			bgColor={"#212428"}
 		>
 			<Flex
 				position={"relative"}
@@ -77,7 +77,7 @@ export default function Projects() {
 						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#12cc53"} fontSize={"1.7em"}>
+						<Text color={"#00ff00"} fontSize={"1.7em"}>
 							QuickChat
 						</Text>
 						<Text m="0 0 15px 0">
@@ -96,7 +96,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://quickchat-video.netlify.app"
 								isExternal
@@ -108,7 +108,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://github.com/mikey712712/Video-Chat-App"
 								isExternal
@@ -142,7 +142,7 @@ export default function Projects() {
 						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#12cc53"} fontSize={"1.7em"}>
+						<Text color={"#00ff00"} fontSize={"1.7em"}>
 							Grid Fight
 						</Text>
 						<Text m="0 0 15px 0">
@@ -160,7 +160,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://grid-fight-2022.netlify.app/"
 								isExternal
@@ -172,7 +172,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://github.com/mikey712712/Grid-Fight"
 								isExternal
@@ -206,7 +206,7 @@ export default function Projects() {
 						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#12cc53"} fontSize={"1.7em"}>
+						<Text color={"#00ff00"} fontSize={"1.7em"}>
 							CRUD Project Tracker
 						</Text>
 						<Text m="0 0 15px 0">
@@ -224,7 +224,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://project-tracker-web.up.railway.app/"
 								isExternal
@@ -236,7 +236,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://github.com/mikey712712/project-tracker"
 								isExternal
@@ -270,7 +270,7 @@ export default function Projects() {
 						alignSelf="center"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#12cc53"} fontSize={"1.7em"}>
+						<Text color={"#00ff00"} fontSize={"1.7em"}>
 							Tic-Tac-Toe/Connect-4
 						</Text>
 						<Text m="0 0 15px 0">
@@ -286,7 +286,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://mikey712712.github.io/Tic-Tac-Toe/"
 								isExternal
@@ -298,7 +298,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#12cc53",
+									color: "#00ff00",
 								}}
 								href="https://github.com/mikey712712/Tic-Tac-Toe"
 								isExternal

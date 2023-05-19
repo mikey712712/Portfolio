@@ -18,7 +18,7 @@ export default function Contact() {
 			boxSizing={"border-box"}
 			zIndex={"100"}
 			id="contact"
-			bgColor={"#191414"}
+			bgColor={"#212428"}
 		>
 			<Flex
 				position={"relative"}
@@ -42,19 +42,19 @@ export default function Contact() {
 					<Text m={"0 0 15px 0"} fontSize={"1.5em"}>
 						Looking for a self-driven and capable software engineer? Get in contact with me via email or LinkedIn!
 					</Text>
-					<Link href="mailto:michaelholton712@gmail.com" p={["0", , , "0 0 0 15px"]} _hover={{ color: "#12cc53" }} fontSize={"1.5em"}>
+					<Link href="mailto:michaelholton712@gmail.com" p={["0", , , "0 0 0 15px"]} _hover={{ color: "#00ff00" }} fontSize={"1.5em"}>
 						Email
 					</Link>
 					<Link
 						href="https://www.linkedin.com/in/michaelholton-dev/"
 						isExternal
 						p={["0", , , "0 0 0 15px"]}
-						_hover={{ color: "#12cc53" }}
+						_hover={{ color: "#00ff00" }}
 						fontSize={"1.5em"}
 					>
 						LinkedIn
 					</Link>
-					<Link href="https://github.com/mikey712712/" isExternal p={["0", , , "0 0 0 15px"]} _hover={{ color: "#12cc53" }} fontSize={"1.5em"}>
+					<Link href="https://github.com/mikey712712/" isExternal p={["0", , , "0 0 0 15px"]} _hover={{ color: "#00ff00" }} fontSize={"1.5em"}>
 						Github
 					</Link>
 				</Flex>
