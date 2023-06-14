@@ -56,7 +56,7 @@ export default function Experience() {
 				>
 					Experience
 				</Text>
-				<Grid gridTemplateRows={"1fr 1fr"} gridTemplateColumns={"1fr 1fr"} autoFlow="column">
+				<Grid gridTemplateRows={["auto auto auto", , , "1fr 1fr"]} gridTemplateColumns={["1fr", , , "1fr 1fr"]} autoFlow="column">
 					<GridItem p="5px 10px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
 						<Flex
 							flexFlow={"column nowrap"}

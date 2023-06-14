@@ -26,7 +26,7 @@ export default function Skills() {
 		<Flex
 			ref={ref}
 			opacity={inView ? 1 : 0}
-			margin={"40px 0 140px 0"}
+			margin={["10px 0", , , "40px 0 140px 0"]}
 			// top={inView ? "80px" : "0"}
 			zIndex={"100"}
 			position={"relative"}
