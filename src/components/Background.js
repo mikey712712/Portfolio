@@ -29,11 +29,14 @@ export default function Background() {
 		}
 	}, [shownIcons])
 	const handleHover = (key) => {
-		setHideNextRender(true)
-		setShownIcons({
-			...shownIcons,
-			[key]: true,
-		})
+		if (window.scrollY < 1200) {
+			console.log("haa", new Date())
+			setHideNextRender(true)
+			setShownIcons({
+				...shownIcons,
+				[key]: true,
+			})
+		}
 	}
 	return (
 		<Grid

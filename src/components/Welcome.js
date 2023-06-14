@@ -186,8 +186,8 @@ export default function Welcome({ tabWidth }) {
 						position={"absolute"}
 						borderRadius="10px"
 						left={["5%", , , "50%"]}
-						bottom="23%"
-						h={["300px", "260px", "280px", "50%"]}
+						bottom="25%"
+						h={["300px", "260px", "280px", "45%"]}
 						w={["90%", "90%", "90%", "450px"]}
 						bgColor={activeCard === 1 ? "rgba(255,255,255,0.2)" : "gray"}
 						transformOrigin="bottom"
@@ -208,17 +208,17 @@ export default function Welcome({ tabWidth }) {
 							borderRadius="8px"
 							opacity={activeCard === 1 ? "100%" : "0"}
 							boxSizing={"border-box"}
-							p="10px 20px 10px 10px"
+							p="12px"
 							fontSize={["0.8em", , "1.05em"]}
 						>
 							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"300"} marginBottom={"10px"}>
 								Background
 							</Heading>
-							<Text color="#f6f7f9">
+							<Text color="#f6f7f9" pl="2px">
 								Hello! I'm Michael, a software engineer based in Sydney, NSW with experience in full-stack app development.
 							</Text>
 							<br />
-							<Text color="#f6f7f9">
+							<Text color="#f6f7f9" pl="2px">
 								From 2019-2022 I studied Aerospace Engineering at The University of New South Wales while working in logistics.
 							</Text>
 						</Box>
@@ -227,8 +227,8 @@ export default function Welcome({ tabWidth }) {
 						position={"absolute"}
 						borderRadius="10px"
 						left={["5%", , , "50%"]}
-						bottom="23%"
-						h={["300px", "260px", "280px", "50%"]}
+						bottom="25%"
+						h={["300px", "260px", "280px", "45%"]}
 						w={["90%", "90%", "90%", "450px"]}
 						bgColor={activeCard === 2 ? "rgba(255,255,255,0.2)" : "gray"}
 						transformOrigin="bottom"
@@ -249,13 +249,13 @@ export default function Welcome({ tabWidth }) {
 							h="100%"
 							opacity={activeCard === 2 ? "100%" : "0"}
 							boxSizing={"border-box"}
-							p="10px 40px 10px 10px"
+							p="12px"
 							fontSize={["0.8em", , "1.05em"]}
 						>
 							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"300"} marginBottom={"10px"}>
 								Now
 							</Heading>
-							<Text color="#f6f7f9">
+							<Text color="#f6f7f9" pl="2px">
 								Having developed a passion for the tech industry and it's innovative potential, I transitioned my career focus towards software
 								engineering, completed a 12 week software engineering bootcamp at General Assembly, and have spent the time since refining my
 								skills.
@@ -263,7 +263,7 @@ export default function Welcome({ tabWidth }) {
 						</Box>
 					</Box>
 
-					<Flex alignItems={"center"} flexFlow={"column"} w="100%" position={"absolute"} bottom={["5%", "5%", "5%", "10%"]}>
+					<Flex alignItems={"center"} flexFlow={"column"} w="100%" position={"absolute"} bottom={["5%", "5%", "5%", "13%"]}>
 						<Flex marginBottom={"15px"}>
 							<Box
 								w={"8px"}
