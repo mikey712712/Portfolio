@@ -41,7 +41,7 @@ export default function Welcome({ tabWidth }) {
 						setTimeout(() => {
 							node.style.textDecoration = "underline"
 							node.style.textDecorationThickness = "4px"
-							node.style.textDecorationColor = "#0ec24d"
+							node.style.textDecorationColor = "#00ff00"
 						}, letterIndex * 100)
 						setTimeout(() => {
 							node.style.color = "#ebebeb"
@@ -61,7 +61,7 @@ export default function Welcome({ tabWidth }) {
 						setTimeout(() => {
 							node.style.textDecoration = "underline"
 							node.style.textDecorationThickness = "4px"
-							node.style.textDecorationColor = "#0ec24d"
+							node.style.textDecorationColor = "#00ff00"
 						}, letterIndex * 100)
 						setTimeout(() => {
 							node.style.color = "#ebebeb"
@@ -81,7 +81,7 @@ export default function Welcome({ tabWidth }) {
 						setTimeout(() => {
 							node.style.textDecoration = "underline"
 							node.style.textDecorationThickness = "4px"
-							node.style.textDecorationColor = "#0ec24d"
+							node.style.textDecorationColor = "#00ff00"
 						}, letterIndex * 100)
 						setTimeout(() => {
 							node.style.color = "#ebebeb"
@@ -116,7 +116,7 @@ export default function Welcome({ tabWidth }) {
 								key={i}
 								textDecoration="underline"
 								textDecorationThickness="4px"
-								textDecorationColor="#0ec24d"
+								textDecorationColor="#00ff00"
 							>
 								{char}
 							</Heading>
@@ -169,7 +169,7 @@ export default function Welcome({ tabWidth }) {
 					p={["10px 30px", "10px 30px", "10px 30px", "5px"]}
 					h={["fit-content", "fit-content", "fit-content", "100%"]}
 				>
-					<Flex flexFlow={"row wrap"} justify="flex-start">
+					<Flex flexFlow={"row wrap"} justify="flex-start" color={"#f6f7f9"}>
 						{title.split(" ").map((word, i) => (
 							<WelcomeMessage key={i} message={word} index={i} />
 						))}
@@ -201,24 +201,24 @@ export default function Welcome({ tabWidth }) {
 					>
 						<Box
 							transition="400ms"
-							bgColor="#212428"
-							color={"#00bb00"}
+							bgColor={"#242f2a"}
+							color={"#00ff00"}
 							w="100%"
 							h="100%"
 							borderRadius="8px"
 							opacity={activeCard === 1 ? "100%" : "0"}
 							boxSizing={"border-box"}
 							p="10px 20px 10px 10px"
-							fontSize={["0.8em", , "1em"]}
+							fontSize={["0.8em", , "1.05em"]}
 						>
-							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"400"} marginBottom={"10px"}>
+							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"300"} marginBottom={"10px"}>
 								Background
 							</Heading>
-							<Text fontSize={"1.2em"} color="white" fontWeight={"300"}>
+							<Text color="#f6f7f9">
 								Hello! I'm Michael, a software engineer based in Sydney, NSW with experience in full-stack app development.
 							</Text>
 							<br />
-							<Text fontSize={"1.2em"} color="white" fontWeight={"300"}>
+							<Text color="#f6f7f9">
 								From 2019-2022 I studied Aerospace Engineering at The University of New South Wales while working in logistics.
 							</Text>
 						</Box>
@@ -242,20 +242,20 @@ export default function Welcome({ tabWidth }) {
 					>
 						<Box
 							transition="400ms"
-							bgColor="#212428"
-							color={"#00bb00"}
+							bgColor={"#242f2a"}
+							color={"#00ff00"}
 							borderRadius="8px"
 							w="100%"
 							h="100%"
 							opacity={activeCard === 2 ? "100%" : "0"}
 							boxSizing={"border-box"}
 							p="10px 40px 10px 10px"
-							fontSize={["0.8em", , "1em"]}
+							fontSize={["0.8em", , "1.05em"]}
 						>
-							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"400"} marginBottom={"10px"}>
+							<Heading fontFamily={"Sono, sans-serif"} fontWeight={"300"} marginBottom={"10px"}>
 								Now
 							</Heading>
-							<Text fontSize={"1.2em"} color="white" fontWeight={"300"}>
+							<Text color="#f6f7f9">
 								Having developed a passion for the tech industry and it's innovative potential, I transitioned my career focus towards software
 								engineering, completed a 12 week software engineering bootcamp at General Assembly, and have spent the time since refining my
 								skills.
@@ -269,7 +269,7 @@ export default function Welcome({ tabWidth }) {
 								w={"8px"}
 								h={"8px"}
 								marginRight={"5px"}
-								backgroundColor={activeCard === 1 ? "#00bb00" : null}
+								backgroundColor={activeCard === 1 ? "#00ff00" : null}
 								borderRadius={"4px"}
 								border={"1px solid white"}
 								transition={"400ms"}
@@ -278,7 +278,7 @@ export default function Welcome({ tabWidth }) {
 								w={"8px"}
 								h={"8px"}
 								marginLeft={"5px"}
-								backgroundColor={activeCard === 2 ? "#00bb00" : null}
+								backgroundColor={activeCard === 2 ? "#00ff00" : null}
 								borderRadius={"4px"}
 								border={"1px solid white"}
 								transition={"400ms"}
@@ -311,14 +311,15 @@ export default function Welcome({ tabWidth }) {
 							onClick={handleArrowClick}
 							onTouchEnd={handleArrowClick}
 							_hover={{
-								bgColor: "#00bb00",
+								bgColor: "#242f2a",
+								color: "white",
 							}}
 							// opacity={activeCard === 1 ? "1" : "0"}
 							// cursor={activeCard === 1 ? "pointer" : "default"}
 							transition={"400ms"}
 							zIndex={"100"}
 						>
-							<Box transition={"600ms cubic-bezier(0.75, 1, 0.5, 1)"} transform={activeCard === 2 ? "rotate(-180deg)" : "unset"}>
+							<Box transition={"600ms ease-out"} transform={activeCard === 2 ? "rotate(-180deg)" : "unset"}>
 								<AiOutlineArrowRight />
 							</Box>
 						</Button>

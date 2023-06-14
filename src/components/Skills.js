@@ -51,6 +51,7 @@ export default function Skills() {
 				color="white"
 				justify={"flex-start"}
 				alignItems={"stretch"}
+				bgColor={"#242f2a"}
 				fontSize={["0.8em", , , "1.05em"]}
 			>
 				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.8em"}>
@@ -71,7 +72,7 @@ export default function Skills() {
 						Experienced in JavaScript, HTML, CSS and single-page/multi-page app development using JavaScript frameworks such as ReactJS/Vite.
 						Passionate about interactive UI design, experienced with CSS libraries such as Chakra-UI and Bootstrap.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00bb00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiCss3 />
 						<SiJavascript />
 						<AiFillHtml5 fontSize={"1.3em"} />
@@ -95,7 +96,7 @@ export default function Skills() {
 						Strong understanding of various tools for functional and OOP including Python, Flask, Node.js, Express.js, EJS, MATLAB. Proficient in
 						source control methodologies using git.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00bb00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiPython />
 						<SiFlask />
 						<SiNodedotjs />
@@ -119,7 +120,7 @@ export default function Skills() {
 						Familiar with the use of both relational and non-relational databases such as PostgreSQL, Firebase (Firestore, RealtimeDB,
 						Authentication), MongoDB/MongoDB Atlas.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00bb00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiPostgresql className="postgres-icon" />
 						<SiFirebase />
 						<SiMongodb />
@@ -139,7 +140,7 @@ export default function Skills() {
 						Extensive background in problem solving with a strong capability to apply creative, analytical, critical-thinking, and research skills
 						to identify a problem and pick the best of all possible solutions. Very comfortable in dealing with mathematical problems.
 					</Text>
-					<Flex h="40px" alignItems={"center"} color="#00dd00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
+					<Flex h="40px" alignItems={"center"} color="#00bb00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<FaWrench fontSize={"0.9em"} />
 						<TbMathFunction />
 					</Flex>

@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react"
-import { useState } from "react"
 import { SlArrowDown } from "react-icons/sl"
 import { useInView } from "react-intersection-observer"
 
