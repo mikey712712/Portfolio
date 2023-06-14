@@ -56,7 +56,7 @@ export default function Header({ tabWidth }) {
 					w={"100%"}
 					// maxW={"1600px"}
 					p={"15px"}
-					fontSize={"1.1em"}
+					fontSize={"1em"}
 					fontWeight={"500"}
 					boxSizing={"border-box"}
 					position={"fixed"}
@@ -112,13 +112,12 @@ export default function Header({ tabWidth }) {
 						cursor={"pointer"}
 						m="0 30px"
 						transition={"0.4s"}
-						onClick={() =>
+						onClick={() => {
 							window.scrollTo({
-								top: window.innerHeight - 40,
-								left: 0,
+								top: document.querySelector("#skills").getBoundingClientRect().top + window.pageYOffset - 70,
 								behavior: "smooth",
 							})
-						}
+						}}
 					>
 						<Text color={"#00ff00"} marginRight={"5px"}>
 							02.
@@ -133,13 +132,33 @@ export default function Header({ tabWidth }) {
 						m="0 30px"
 						transition={"0.4s"}
 						onClick={() => {
-							document.querySelector("#projects").scrollIntoView({
+							window.scrollTo({
+								top: document.querySelector("#experience").getBoundingClientRect().top + window.pageYOffset - 60,
 								behavior: "smooth",
 							})
 						}}
 					>
 						<Text color={"#00ff00"} marginRight={"5px"}>
 							03.
+						</Text>
+						<Text>Experience</Text>
+					</Flex>
+					<Flex
+						_hover={{
+							color: "#00ff00",
+						}}
+						cursor={"pointer"}
+						m="0 30px"
+						transition={"0.4s"}
+						onClick={() => {
+							window.scrollTo({
+								top: document.querySelector("#projects").getBoundingClientRect().top + window.pageYOffset - 60,
+								behavior: "smooth",
+							})
+						}}
+					>
+						<Text color={"#00ff00"} marginRight={"5px"}>
+							04.
 						</Text>
 						<Text>Projects</Text>
 					</Flex>
@@ -157,7 +176,7 @@ export default function Header({ tabWidth }) {
 						}
 					>
 						<Text color={"#00ff00"} marginRight={"5px"}>
-							04.
+							05.
 						</Text>
 						<Text>Contact</Text>
 					</Flex>

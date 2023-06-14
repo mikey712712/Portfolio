@@ -9,6 +9,7 @@ import Contact from "./components/Contact"
 import { extendTheme } from "@chakra-ui/react"
 import Background from "./components/Background"
 import Experience from "./components/Experience"
+import Education from "./components/Education"
 
 const theme = extendTheme({
 	colors: {
@@ -39,6 +40,7 @@ function App() {
 				<Welcome tabWidth={tabWidth} />
 				<Skills />
 				<Experience />
+				<Education />
 				<Projects tabWidth={tabWidth} />
 				<Contact />
 			</Box>

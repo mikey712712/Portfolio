@@ -38,19 +38,28 @@ export default function Projects() {
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderRadius={"5px"}
-				borderTop={[, , , "1px solid white"]}
+				borderTop={[, , , "1px solid #f6f7f9"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
-				color="white"
+				color="#f6f7f9"
 				justify={"flex-start"}
 				alignItems={"stretch"}
 				fontSize={["0.8em", , , "0.9em"]}
 			>
-				<Text boxSizing="border-box" p={["0", , , "0 0 15px 15px"]} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.8em"}>
+				<Text
+					right={containerInView ? 0 : "50px"}
+					transition="1000ms"
+					position={"relative"}
+					boxSizing="border-box"
+					p={["0", , , "0 0 15px 15px"]}
+					w={"100%"}
+					h="fit-content"
+					fontWeight="400"
+					fontSize={"2.8em"}
+				>
 					Projects
 				</Text>
 				<Flex

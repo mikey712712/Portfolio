@@ -23,14 +23,13 @@ export default function Contact() {
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderRadius={"5px"}
-				borderTop={[, , , "1px solid white"]}
+				borderTop={[, , , "1px solid #f6f7f9"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
-				color="white"
+				color="#f6f7f9"
 				justify={"flex-start"}
 				alignItems={"stretch"}
 				fontSize={["0.8em", , , "0.9em"]}

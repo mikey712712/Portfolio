@@ -271,7 +271,7 @@ export default function Welcome({ tabWidth }) {
 								marginRight={"5px"}
 								backgroundColor={activeCard === 1 ? "#00ff00" : null}
 								borderRadius={"4px"}
-								border={"1px solid white"}
+								border={"1px solid #f6f7f9"}
 								transition={"400ms"}
 							></Box>
 							<Box
@@ -280,7 +280,7 @@ export default function Welcome({ tabWidth }) {
 								marginLeft={"5px"}
 								backgroundColor={activeCard === 2 ? "#00ff00" : null}
 								borderRadius={"4px"}
-								border={"1px solid white"}
+								border={"1px solid #f6f7f9"}
 								transition={"400ms"}
 							></Box>
 						</Flex>
@@ -312,7 +312,7 @@ export default function Welcome({ tabWidth }) {
 							onTouchEnd={handleArrowClick}
 							_hover={{
 								bgColor: "#242f2a",
-								color: "white",
+								color: "#f6f7f9",
 							}}
 							// opacity={activeCard === 1 ? "1" : "0"}
 							// cursor={activeCard === 1 ? "pointer" : "default"}

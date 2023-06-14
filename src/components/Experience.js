@@ -1,16 +1,29 @@
 import { Flex, Grid, GridItem, List, ListIcon, ListItem, Text } from "@chakra-ui/react"
 import { BsCheck } from "react-icons/bs"
+import { useInView } from "react-intersection-observer"
 export default function Experience() {
+	const { ref: containerRef, inView: containerInView } = useInView({
+		threshold: 0.2,
+	})
+	const { ref: refOne, inView: oneInView } = useInView({
+		threshold: 0.2,
+	})
+	const { ref: refTwo, inView: twoInView } = useInView({
+		threshold: 0.2,
+	})
+	const { ref: refThree, inView: threeInView } = useInView({
+		threshold: 0.2,
+	})
 	return (
 		<Flex
-			// ref={containerRef}
-			// opacity={containerInView ? 1 : 0}
-			transition={"800ms"}
+			ref={containerRef}
+			opacity={containerInView ? 1 : 0}
+			transition={"1000ms"}
 			position={"relative"}
 			w={"100%"}
 			h={"fit-content"}
 			boxSizing={"border-box"}
-			id="projects"
+			id="experience"
 			scrollMarginTop={"30px"}
 			zIndex={"100"}
 			bgColor={"#212428"}
@@ -18,8 +31,7 @@ export default function Experience() {
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderRadius={"5px"}
-				borderTop={[, , , "1px solid white"]}
+				borderTop={[, , , "1px solid #f6f7f9"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
@@ -30,11 +42,22 @@ export default function Experience() {
 				alignItems={"stretch"}
 				fontSize={["0.8em", , , "0.9em"]}
 			>
-				<Text boxSizing="border-box" p={["0", , , "0 0 15px 15px"]} w={"100%"} h="fit-content" color={"#f6f7f9"} fontWeight="400" fontSize={"2.8em"}>
+				<Text
+					right={containerInView ? 0 : "50px"}
+					transition="1000ms"
+					position={"relative"}
+					boxSizing="border-box"
+					p={["0", , , "0 0 5px 15px"]}
+					w={"100%"}
+					h="fit-content"
+					color={"#f6f7f9"}
+					fontWeight="400"
+					fontSize={"2.8em"}
+				>
 					Experience
 				</Text>
 				<Grid gridTemplateRows={"1fr 1fr"} gridTemplateColumns={"1fr 1fr"} autoFlow="column">
-					<GridItem p="5px" borderRight={"1px solid #f6f7f9"}>
+					<GridItem p="5px 10px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -43,11 +66,16 @@ export default function Experience() {
 							h="fit-content"
 							fontWeight="400"
 							fontSize={"1.2em"}
+							ref={refOne}
+							opacity={oneInView ? 1 : 0}
+							right={oneInView ? 0 : "50px"}
+							position="relative"
+							transition={"1000ms"}
 						>
-							<Text color={"#00ff00"} m="0">
+							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Software Engineering Instructor Associate - <i>General Assembly</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#f6f7f9"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
 								FEB 2023 - MAY 2023
 							</Text>
 							<List color={"#f6f7f9"} fontSize="0.7em" spacing="5px">
@@ -106,7 +134,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px" borderRight={"1px solid #f6f7f9"}>
+					<GridItem p="5px 10px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -115,11 +143,16 @@ export default function Experience() {
 							h="fit-content"
 							fontWeight="400"
 							fontSize={"1.2em"}
+							ref={refTwo}
+							opacity={twoInView ? 1 : 0}
+							right={twoInView ? 0 : "50px"}
+							position={"relative"}
+							transition={"1000ms"}
 						>
-							<Text color={"#00ff00"} m="0">
+							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Team Lead - <i>Be Cool Refrigerated Courier Group</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#f6f7f9"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
 								DEC 2019 - JULY 2022
 							</Text>
 							<List color={"#f6f7f9"} fontSize="0.7em" spacing={"5px"}>
@@ -169,7 +202,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px">
+					<GridItem p="5px 0px 5px 10px">
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -178,11 +211,16 @@ export default function Experience() {
 							h="fit-content"
 							fontWeight="400"
 							fontSize={"1.2em"}
+							ref={refThree}
+							opacity={threeInView ? 1 : 0}
+							left={threeInView ? 0 : "50px"}
+							position={"relative"}
+							transition={"1000ms"}
 						>
-							<Text color={"#00ff00"} m="0">
+							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Team Member - <i>Be Cool Refrigerated Courier Group</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#f6f7f9"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
 								OCT 2018 - DEC 2019
 							</Text>
 							<List color={"#f6f7f9"} fontSize="0.7em" spacing="5px">

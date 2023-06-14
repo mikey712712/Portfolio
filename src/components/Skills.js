@@ -20,7 +20,7 @@ import { TbMathFunction } from "react-icons/tb"
 import { useInView } from "react-intersection-observer"
 export default function Skills() {
 	const { ref, inView } = useInView({
-		threshold: 0.2,
+		threshold: 0.3,
 	})
 	return (
 		<Flex
@@ -42,27 +42,27 @@ export default function Skills() {
 				position={"relative"}
 				flexFlow={["column nowrap", "column nowrap", "column nowrap", "row wrap"]}
 				borderRadius={"5px"}
-				border={[, , , "1px solid white"]}
+				border={[, , , "1px solid #f6f7f9"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
-				color="white"
+				color="#f6f7f9"
 				justify={"flex-start"}
 				alignItems={"stretch"}
 				bgColor={"#242f2a"}
 				fontSize={["0.8em", , , "1.05em"]}
 			>
-				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.8em"}>
+				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.6em"}>
 					Skills
 				</Text>
 				<Flex
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					borderRight={["unset", "unset", "unset", "1px solid white"]}
-					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
+					borderRight={["unset", "unset", "unset", "1px solid #f6f7f9"]}
+					borderBottom={["1px solid #f6f7f9", "1px solid #f6f7f9", "1px solid #f6f7f9", "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 				>
 					<Text color={"#00ff00"} w="90%" fontSize={"1.5em"}>
@@ -87,7 +87,7 @@ export default function Skills() {
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
-					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
+					borderBottom={["1px solid #f6f7f9", "1px solid #f6f7f9", "1px solid #f6f7f9", "unset"]}
 				>
 					<Text color={"#00ff00"} fontSize={"1.5em"}>
 						Software Development
@@ -105,9 +105,9 @@ export default function Skills() {
 					</Flex>
 				</Flex>
 				<Flex
-					borderBottom={["1px solid white", "1px solid white", "1px solid white", "unset"]}
-					borderRight={["unset", "unset", "unset", "1px solid white"]}
-					borderTop={["unset", "unset", "unset", "1px solid white"]}
+					borderBottom={["1px solid #f6f7f9", "1px solid #f6f7f9", "1px solid #f6f7f9", "unset"]}
+					borderRight={["unset", "unset", "unset", "1px solid #f6f7f9"]}
+					borderTop={["unset", "unset", "unset", "1px solid #f6f7f9"]}
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
@@ -131,7 +131,7 @@ export default function Skills() {
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
-					borderTop={["unset", "unset", "unset", "1px solid white"]}
+					borderTop={["unset", "unset", "unset", "1px solid #f6f7f9"]}
 				>
 					<Text color={"#00ff00"} fontSize={"1.5em"}>
 						Problem Solving

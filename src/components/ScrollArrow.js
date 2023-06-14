@@ -12,7 +12,7 @@ export default function ScrollArrow() {
 			opacity={inView ? 1 : 0}
 			cursor={inView ? "pointer" : "default"}
 			left="0"
-			color="white"
+			color="#f6f7f9"
 			position={"absolute"}
 			bottom={inView ? ["-25px", "-25px", "-25px", "25px"] : "50px"}
 			fontSize={"1.7em"}
