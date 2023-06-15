@@ -3,7 +3,7 @@ import { BsCheck } from "react-icons/bs"
 import { useInView } from "react-intersection-observer"
 export default function Experience() {
 	const { ref: containerRef, inView: containerInView } = useInView({
-		threshold: 0.2,
+		threshold: 0,
 	})
 	const { ref: refOne, inView: oneInView } = useInView({
 		threshold: 0.2,
