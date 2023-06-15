@@ -134,12 +134,13 @@ export default function Welcome({ tabWidth }) {
 	// 	}
 	// }
 
-	const handleArrowClick = () => {
+	const handleArrowClick = (e) => {
 		if (activeCard < 2) {
 			setActiveCard(activeCard + 1)
 		} else if (activeCard > 1) {
 			setActiveCard(activeCard - 1)
 		}
+		e.preventDefault()
 	}
 
 	return (
@@ -308,8 +309,8 @@ export default function Welcome({ tabWidth }) {
 							boxSizing="border-box"
 							p={"3px 10px"}
 							fontSize={"1.3em"}
-							onClick={handleArrowClick}
-							onTouchEnd={handleArrowClick}
+							onClick={(e) => handleArrowClick(e)}
+							onTouchEnd={(e) => handleArrowClick(e)}
 							_hover={{
 								bgColor: "#242f2a",
 								color: "#f6f7f9",
