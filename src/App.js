@@ -1,4 +1,4 @@
-import { Box, ChakraProvider } from "@chakra-ui/react"
+import { Box, ChakraProvider, Flex, Grid, GridItem } from "@chakra-ui/react"
 import Header from "./components/Header"
 import Welcome from "./components/Welcome"
 import Skills from "./components/Skills"
@@ -39,8 +39,15 @@ function App() {
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} />
 				<Skills />
-				<Experience />
-				<Education />
+				<Grid gridTemplateColumns={["1fr", , , "1fr 1fr"]} gridTemplateRows={["1fr 1fr", , , "1fr"]}>
+					<GridItem>
+						<Experience />
+					</GridItem>
+					<GridItem>
+						<Education />
+					</GridItem>
+				</Grid>
+
 				<Projects tabWidth={tabWidth} />
 				<Contact />
 			</Box>

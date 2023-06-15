@@ -22,18 +22,17 @@ export default function Education() {
 			h={"fit-content"}
 			boxSizing={"border-box"}
 			id="education"
-			scrollMarginTop={"30px"}
 			zIndex={"100"}
 			bgColor={"#212428"}
 		>
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderRadius={"5px"}
+				borderTop={[, , , "1px solid #f6f7f9"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
-				p="10px 30px 30px 30px"
+				p="30px 30px 0 0"
 				fontFamily={"Sono, sans-serif"}
 				// color="white"
 				justify={"flex-start"}
@@ -41,11 +40,11 @@ export default function Education() {
 				fontSize={["0.8em", , , "0.9em"]}
 			>
 				<Text
-					right={containerInView ? 0 : "50px"}
+					left={containerInView ? 0 : "50px"}
 					transition="1000ms"
 					position={"relative"}
 					boxSizing="border-box"
-					p={["0", , , "0 0 5px 15px"]}
+					p={["0", , , "0 0 5px 5px"]}
 					w={"100%"}
 					h="fit-content"
 					color={"#f6f7f9"}
@@ -54,19 +53,19 @@ export default function Education() {
 				>
 					Education
 				</Text>
-				<Grid gridTemplateRows={["auto auto", , , "1fr"]} gridTemplateColumns={["1fr", , , "1fr 1fr"]} autoFlow="column">
-					<GridItem p="5px 10px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
+				<Grid gridTemplateRows={"auto auto"} gridTemplateColumns={"1fr"} autoFlow="column">
+					<GridItem p="5px 10px 5px 0">
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
-							p={["0", , , "0 0 15px 15px"]}
+							p={["0", , , "0 0 15px 5px"]}
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"
 							fontSize={"1.2em"}
 							ref={refOne}
 							opacity={oneInView ? 1 : 0}
-							right={oneInView ? 0 : "50px"}
+							left={oneInView ? 0 : "50px"}
 							position="relative"
 							transition={"1000ms"}
 						>
@@ -100,7 +99,7 @@ export default function Education() {
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
-							p={["0", , , "0 0 15px 15px"]}
+							p={["0", , , "0 0 15px 5px"]}
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"

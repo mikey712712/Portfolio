@@ -35,7 +35,7 @@ export default function Experience() {
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
-				p="30px 30px 0 30px"
+				p="30px 30px 30px 30px"
 				fontFamily={"Sono, sans-serif"}
 				// color="white"
 				justify={"flex-start"}
@@ -56,8 +56,8 @@ export default function Experience() {
 				>
 					Experience
 				</Text>
-				<Grid gridTemplateRows={["auto auto auto", , , "1fr 1fr"]} gridTemplateColumns={["1fr", , , "1fr 1fr"]} autoFlow="column">
-					<GridItem p="5px 10px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
+				<Grid gridTemplateRows={"auto auto auto"} gridTemplateColumns={"1fr"} autoFlow="column">
+					<GridItem p="5px 15px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -134,7 +134,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 10px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
+					<GridItem p="5px 15px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -202,7 +202,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 0px 5px 10px">
+					<GridItem p="5px 15px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -213,7 +213,7 @@ export default function Experience() {
 							fontSize={"1.2em"}
 							ref={refThree}
 							opacity={threeInView ? 1 : 0}
-							left={threeInView ? 0 : "50px"}
+							right={threeInView ? 0 : "50px"}
 							position={"relative"}
 							transition={"1000ms"}
 						>
