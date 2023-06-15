@@ -32,7 +32,7 @@ export default function Education() {
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
-				p="30px 30px 0 0"
+				p={["30px 30px 30px 30px", , , "30px 30px 0 0"]}
 				fontFamily={"Sono, sans-serif"}
 				// color="white"
 				justify={"flex-start"}
@@ -95,7 +95,7 @@ export default function Education() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 0 5px 10px">
+					<GridItem p="5px 10px 5px 0">
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"

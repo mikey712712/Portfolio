@@ -57,7 +57,7 @@ export default function Experience() {
 					Experience
 				</Text>
 				<Grid gridTemplateRows={"auto auto auto"} gridTemplateColumns={"1fr"} autoFlow="column">
-					<GridItem p="5px 15px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(246,247,249,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -134,7 +134,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 15px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(246,247,249,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -202,7 +202,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 15px 5px 0" borderRight={"1px solid rgba(246,247,249,0.3)"}>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(246,247,249,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"

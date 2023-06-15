@@ -39,7 +39,7 @@ function App() {
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} />
 				<Skills />
-				<Grid gridTemplateColumns={["1fr", , , "1fr 1fr"]} gridTemplateRows={["1fr 1fr", , , "1fr"]}>
+				<Grid maxW={"100%"} gridTemplateColumns={["1fr", , , "1fr 1fr"]} gridTemplateRows={["auto auto", , , "1fr"]} overflow="hidden">
 					<GridItem>
 						<Experience />
 					</GridItem>
