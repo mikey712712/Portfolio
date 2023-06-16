@@ -30,7 +30,6 @@ export default function Background() {
 	}, [shownIcons])
 	const handleHover = (key) => {
 		if (window.scrollY < 1200) {
-			console.log("haa", new Date())
 			setHideNextRender(true)
 			setShownIcons({
 				...shownIcons,
