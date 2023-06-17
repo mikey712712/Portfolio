@@ -152,6 +152,7 @@ export default function Welcome({ tabWidth }) {
 			boxSizing={"border-box"}
 			p={[, , , "56px 80px"]}
 			className={"welcome"}
+			transitionProperty={"top, opacity"}
 			marginTop={["15%", "15%", "15%", 0]}
 		>
 			<Flex
@@ -198,6 +199,7 @@ export default function Welcome({ tabWidth }) {
 						boxSizing="border-box"
 						p="2px"
 						transition="400ms"
+						transitionProperty={"background-color, z-index"}
 						// boxShadow={activeCard === 1 ? "-5px 5px 40px 0 gray" : ""}
 					>
 						<Box
@@ -239,6 +241,7 @@ export default function Welcome({ tabWidth }) {
 						boxSizing="border-box"
 						p="2px"
 						transition="400ms"
+						transitionProperty={"background-color, z-index"}
 						// boxShadow={activeCard === 2 ? "-5px 5px 40px 0 gray" : ""}
 					>
 						<Box
@@ -273,7 +276,7 @@ export default function Welcome({ tabWidth }) {
 								backgroundColor={activeCard === 1 ? "#00ff00" : null}
 								borderRadius={"4px"}
 								border={"1px solid #f6f7f9"}
-								transition={"400ms"}
+								transition={"background-color 400ms"}
 							></Box>
 							<Box
 								w={"8px"}
@@ -282,7 +285,7 @@ export default function Welcome({ tabWidth }) {
 								backgroundColor={activeCard === 2 ? "#00ff00" : null}
 								borderRadius={"4px"}
 								border={"1px solid #f6f7f9"}
-								transition={"400ms"}
+								transition={"background-color 400ms"}
 							></Box>
 						</Flex>
 						{/* <Button
@@ -318,9 +321,10 @@ export default function Welcome({ tabWidth }) {
 							// opacity={activeCard === 1 ? "1" : "0"}
 							// cursor={activeCard === 1 ? "pointer" : "default"}
 							transition={"400ms"}
+							transitionProperty={"background-color, color"}
 							zIndex={"100"}
 						>
-							<Box transition={"600ms ease-out"} transform={activeCard === 2 ? "rotate(-180deg)" : "unset"}>
+							<Box transition={"transform 600ms ease-out"} transform={activeCard === 2 ? "rotate(-180deg)" : "unset"}>
 								<AiOutlineArrowRight />
 							</Box>
 						</Button>

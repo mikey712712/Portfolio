@@ -19,7 +19,7 @@ export default function Education() {
 		<Flex
 			ref={containerRef}
 			opacity={containerInView ? 1 : 0}
-			transition={"800ms"}
+			transition={"opacity 800ms"}
 			position={"relative"}
 			w={"100%"}
 			h={"fit-content"}
@@ -44,7 +44,7 @@ export default function Education() {
 			>
 				<Text
 					left={containerInView ? 0 : "50px"}
-					transition="1000ms"
+					transition="left 1000ms"
 					position={"relative"}
 					boxSizing="border-box"
 					p={["0", , , "0 0 5px 5px"]}
@@ -71,6 +71,7 @@ export default function Education() {
 							left={oneInView ? 0 : "50px"}
 							position="relative"
 							transition={"1000ms"}
+							transitionProperty={"opacity, left"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								SE Immersive Bootcamp - <i>General Assembly</i>
@@ -112,6 +113,7 @@ export default function Education() {
 							left={twoInView ? 0 : "50px"}
 							position={"relative"}
 							transition={"1000ms"}
+							transitionProperty={"opacity, left"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Bachelor of Aerospace Engineering - <i>UNSW</i>

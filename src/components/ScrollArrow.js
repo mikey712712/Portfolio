@@ -24,7 +24,7 @@ export default function ScrollArrow() {
 			justify={"center"}
 			w="100%"
 			boxSizing="border-box"
-			transition={"600ms"}
+			transition={"opacity 600ms, bottom 600ms"}
 			zIndex={"300"}
 			_hover={{
 				opacity: "0.6",

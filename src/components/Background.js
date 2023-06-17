@@ -55,6 +55,7 @@ export default function Background() {
 		>
 			<GridItem
 				transition={shownIcons.fr ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.fr ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("fr")}
 				display={"flex"}
@@ -65,6 +66,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.sjs ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.sjs ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("sjs")}
 				display={"flex"}
@@ -75,6 +77,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.scss ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.scss ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("scss")}
 				display={"flex"}
@@ -85,6 +88,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.schak ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.schak ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("schak")}
 				display={"flex"}
@@ -95,6 +99,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.sb ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.sb ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("sb")}
 				display={"flex"}
@@ -105,6 +110,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.spy ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.spy ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("spy")}
 				display={"flex"}
@@ -115,6 +121,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.sfla ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.sfla ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("sfla")}
 				display={"flex"}
@@ -125,6 +132,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.snode ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.snode ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("snode")}
 				display={"flex"}
@@ -135,6 +143,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.sgit ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.sgit ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("sgit")}
 				display={"flex"}
@@ -145,6 +154,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.spsql ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.spsql ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("spsql")}
 				display={"flex"}
@@ -155,6 +165,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.sfb ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.sfb ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("sfb")}
 				display={"flex"}
@@ -165,6 +176,7 @@ export default function Background() {
 			</GridItem>
 			<GridItem
 				transition={shownIcons.smdb ? "100ms" : "1200ms"}
+				transitionProperty={"opacity"}
 				opacity={shownIcons.smdb ? "0.03" : "0"}
 				onMouseEnter={() => handleHover("smdb")}
 				display={"flex"}

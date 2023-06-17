@@ -69,6 +69,7 @@ export default function Header({ tabWidth }) {
 					className="header"
 					zIndex={"300"}
 					left={"0"}
+					transitionProperty={"top, opacity"}
 					// boxShadow="-5px 5px 80px 0 #191414"
 				>
 					{/* <Flex cursor="pointer" position="absolute" left="25px">
@@ -91,7 +92,7 @@ export default function Header({ tabWidth }) {
 						}}
 						cursor={"pointer"}
 						m="0 30px"
-						transition={"0.4s"}
+						transition={"color 0.4s"}
 						onClick={() =>
 							window.scrollTo({
 								top: 0,
@@ -111,7 +112,7 @@ export default function Header({ tabWidth }) {
 						}}
 						cursor={"pointer"}
 						m="0 30px"
-						transition={"0.4s"}
+						transition={"color 0.4s"}
 						onClick={() => {
 							window.scrollTo({
 								top: document.querySelector("#skills").getBoundingClientRect().top + window.pageYOffset - 70,
@@ -130,7 +131,7 @@ export default function Header({ tabWidth }) {
 						}}
 						cursor={"pointer"}
 						m="0 30px"
-						transition={"0.4s"}
+						transition={"color 0.4s"}
 						onClick={() => {
 							window.scrollTo({
 								top: document.querySelector("#experience").getBoundingClientRect().top + window.pageYOffset - 60,
@@ -149,7 +150,7 @@ export default function Header({ tabWidth }) {
 						}}
 						cursor={"pointer"}
 						m="0 30px"
-						transition={"0.4s"}
+						transition={"color 0.4s"}
 						onClick={() => {
 							window.scrollTo({
 								top: document.querySelector("#projects").getBoundingClientRect().top + window.pageYOffset - 60,
@@ -168,7 +169,7 @@ export default function Header({ tabWidth }) {
 						}}
 						cursor={"pointer"}
 						m="0 30px"
-						transition={"0.4s"}
+						transition={"color 0.4s"}
 						onClick={() =>
 							document.querySelector("#contact").scrollIntoView({
 								behavior: "smooth",

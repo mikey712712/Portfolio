@@ -30,7 +30,7 @@ export default function Projects() {
 		<Flex
 			ref={containerRef}
 			opacity={containerInView ? 1 : 0}
-			transition={"800ms"}
+			transition={"opacity 800ms"}
 			position={"relative"}
 			w={"100%"}
 			h={"fit-content"}
@@ -56,7 +56,7 @@ export default function Projects() {
 			>
 				<Text
 					right={containerInView ? 0 : "50px"}
-					transition="1000ms"
+					transition="right 1000ms"
 					position={"relative"}
 					boxSizing="border-box"
 					p={["0", , , "0 0 15px 15px"]}
@@ -73,6 +73,7 @@ export default function Projects() {
 					right={quickchatInView ? 0 : "50px"}
 					position={"relative"}
 					transition={"1000ms"}
+					transitionProperty={"opacity, right"}
 					p={[, , , "0 0 0 15px"]}
 					m="10px 0 50px 0"
 					h="fit-content"
@@ -138,6 +139,7 @@ export default function Projects() {
 					right={gridfightInView ? 0 : "50px"}
 					position={"relative"}
 					transition={"1000ms"}
+					transitionProperty={"opacity, right"}
 					p={[, , , "0 0 0 15px"]}
 					m="0 0 50px 0"
 					h="fit-content"
@@ -201,7 +203,8 @@ export default function Projects() {
 					opacity={crudInView ? 1 : 0}
 					right={crudInView ? 0 : "50px"}
 					position={"relative"}
-					transition={"1200ms"}
+					transition={"1000ms"}
+					transitionProperty={"opacity, right"}
 					p={[, , , "0 0 0 15px"]}
 					m={"0 0 50px 0"}
 					h={"fit-content"}
@@ -265,7 +268,8 @@ export default function Projects() {
 					opacity={tictactoeInView ? 1 : 0}
 					right={tictactoeInView ? 0 : "50px"}
 					position={"relative"}
-					transition={"1300ms"}
+					transition={"1000ms"}
+					transitionProperty={"opacity, right"}
 					p={[, , , "0 0 0 15px"]}
 					m="0 0 50px 0"
 					h="fit-content"

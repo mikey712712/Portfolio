@@ -32,7 +32,7 @@ export default function Skills() {
 			zIndex={"100"}
 			position={"relative"}
 			bgColor={"#212428"}
-			transition={"800ms"}
+			transition={"opacity 800ms"}
 			w={"100%"}
 			h={"fit-content"}
 			boxSizing={"border-box"}

@@ -22,7 +22,7 @@ export default function Experience() {
 		<Flex
 			ref={containerRef}
 			opacity={containerInView ? 1 : 0}
-			transition={"1000ms"}
+			transition={"opacity 800ms"}
 			position={"relative"}
 			w={"100%"}
 			h={"fit-content"}
@@ -48,7 +48,7 @@ export default function Experience() {
 			>
 				<Text
 					right={containerInView ? 0 : "50px"}
-					transition="1000ms"
+					transition="right 1000ms"
 					position={"relative"}
 					boxSizing="border-box"
 					p={["0", , , "0 0 5px 15px"]}
@@ -75,6 +75,7 @@ export default function Experience() {
 							right={oneInView ? 0 : "50px"}
 							position="relative"
 							transition={"1000ms"}
+							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Software Engineering Instructor Associate - <i>General Assembly</i>
@@ -152,6 +153,7 @@ export default function Experience() {
 							right={twoInView ? 0 : "50px"}
 							position={"relative"}
 							transition={"1000ms"}
+							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Team Lead - <i>Be Cool Refrigerated Courier Group</i>
@@ -220,6 +222,7 @@ export default function Experience() {
 							right={threeInView ? 0 : "50px"}
 							position={"relative"}
 							transition={"1000ms"}
+							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
 								Team Member - <i>Be Cool Refrigerated Courier Group</i>
