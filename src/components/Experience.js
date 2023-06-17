@@ -4,15 +4,19 @@ import { useInView } from "react-intersection-observer"
 export default function Experience() {
 	const { ref: containerRef, inView: containerInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: refOne, inView: oneInView } = useInView({
-		threshold: 0.2,
+		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: refTwo, inView: twoInView } = useInView({
-		threshold: 0.2,
+		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: refThree, inView: threeInView } = useInView({
-		threshold: 0.2,
+		threshold: 0,
+		triggerOnce: true,
 	})
 	return (
 		<Flex
@@ -65,7 +69,7 @@ export default function Experience() {
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"
-							fontSize={"1.2em"}
+							fontSize={"1.15em"}
 							ref={refOne}
 							opacity={oneInView ? 1 : 0}
 							right={oneInView ? 0 : "50px"}
@@ -142,7 +146,7 @@ export default function Experience() {
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"
-							fontSize={"1.2em"}
+							fontSize={"1.15em"}
 							ref={refTwo}
 							opacity={twoInView ? 1 : 0}
 							right={twoInView ? 0 : "50px"}
@@ -210,7 +214,7 @@ export default function Experience() {
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"
-							fontSize={"1.2em"}
+							fontSize={"1.15em"}
 							ref={refThree}
 							opacity={threeInView ? 1 : 0}
 							right={threeInView ? 0 : "50px"}

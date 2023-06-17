@@ -8,18 +8,23 @@ export default function Projects() {
 	// }, [tabWidth])
 	const { ref: containerRef, inView: containerInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: quickchatRef, inView: quickchatInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: gridfightRef, inView: gridfightInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: crudRef, inView: crudInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: tictactoeRef, inView: tictactoeInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	return (
 		<Flex

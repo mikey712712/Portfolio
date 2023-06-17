@@ -4,12 +4,15 @@ import { useInView } from "react-intersection-observer"
 export default function Education() {
 	const { ref: containerRef, inView: containerInView } = useInView({
 		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: refOne, inView: oneInView } = useInView({
-		threshold: 0.2,
+		threshold: 0,
+		triggerOnce: true,
 	})
 	const { ref: refTwo, inView: twoInView } = useInView({
-		threshold: 0.2,
+		threshold: 0,
+		triggerOnce: true,
 	})
 
 	return (
@@ -62,7 +65,7 @@ export default function Education() {
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"
-							fontSize={"1.2em"}
+							fontSize={"1.15em"}
 							ref={refOne}
 							opacity={oneInView ? 1 : 0}
 							left={oneInView ? 0 : "50px"}
@@ -70,7 +73,7 @@ export default function Education() {
 							transition={"1000ms"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
-								Software Engineering Immersive Bootcamp - <i>General Assembly</i>
+								SE Immersive Bootcamp - <i>General Assembly</i>
 							</Text>
 							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
 								SEP 2022 - NOV 2022
@@ -103,7 +106,7 @@ export default function Education() {
 							w={"100%"}
 							h="fit-content"
 							fontWeight="400"
-							fontSize={"1.2em"}
+							fontSize={"1.15em"}
 							ref={refTwo}
 							opacity={twoInView ? 1 : 0}
 							left={twoInView ? 0 : "50px"}

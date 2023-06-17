@@ -21,6 +21,7 @@ import { useInView } from "react-intersection-observer"
 export default function Skills() {
 	const { ref, inView } = useInView({
 		threshold: 0.3,
+		triggerOnce: true,
 	})
 	return (
 		<Flex

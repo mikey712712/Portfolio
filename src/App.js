@@ -10,6 +10,7 @@ import { extendTheme } from "@chakra-ui/react"
 import Background from "./components/Background"
 import Experience from "./components/Experience"
 import Education from "./components/Education"
+import Resume from "./components/Resume"
 
 const theme = extendTheme({
 	colors: {
@@ -39,12 +40,13 @@ function App() {
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} />
 				<Skills />
-				<Grid maxW={"100%"} gridTemplateColumns={["1fr", , , "1fr 1fr"]} gridTemplateRows={["auto auto", , , "1fr"]} overflow="hidden">
+				<Grid maxW={"100%"} gridTemplateColumns={["1fr", , , "2.1fr 1fr"]} gridTemplateRows={["auto auto", , , "auto"]} overflow="hidden">
 					<GridItem>
 						<Experience />
 					</GridItem>
 					<GridItem>
 						<Education />
+						<Resume />
 					</GridItem>
 				</Grid>
 
