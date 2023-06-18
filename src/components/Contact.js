@@ -10,7 +10,7 @@ export default function Contact() {
 		<Flex
 			ref={ref}
 			opacity={inView ? 1 : 0}
-			transition={"opacity 800ms"}
+			transition={"opacity 800ms ease-out"}
 			position={"relative"}
 			// m={["0", , , "150px 0"]}
 			p={["0", , , "0 0 100px 0"]}

@@ -14,7 +14,7 @@ export default function Resume() {
 	return (
 		<Flex
 			ref={containerRef}
-			transition={"opacity 1000ms, left 1000ms"}
+			transition={"opacity 1000ms ease-out, left 1000ms ease-out"}
 			w={"100%"}
 			h={["15%"]}
 			alignItems={"center"}

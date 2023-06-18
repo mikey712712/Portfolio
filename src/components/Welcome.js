@@ -200,10 +200,11 @@ export default function Welcome({ tabWidth }) {
 						p="2px"
 						transition="400ms"
 						transitionProperty={"background-color, z-index"}
+						transitionTimingFunction={"ease-out"}
 						// boxShadow={activeCard === 1 ? "-5px 5px 40px 0 gray" : ""}
 					>
 						<Box
-							transition="400ms"
+							transition="opacity 400ms ease-out"
 							bgColor={"#242f2a"}
 							color={"#00ff00"}
 							w="100%"
@@ -242,10 +243,11 @@ export default function Welcome({ tabWidth }) {
 						p="2px"
 						transition="400ms"
 						transitionProperty={"background-color, z-index"}
+						transitionTimingFunction={"ease-out"}
 						// boxShadow={activeCard === 2 ? "-5px 5px 40px 0 gray" : ""}
 					>
 						<Box
-							transition="400ms"
+							transition="opacity 400ms ease-out"
 							bgColor={"#242f2a"}
 							color={"#00ff00"}
 							borderRadius="8px"

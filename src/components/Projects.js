@@ -30,7 +30,7 @@ export default function Projects() {
 		<Flex
 			ref={containerRef}
 			opacity={containerInView ? 1 : 0}
-			transition={"opacity 800ms"}
+			transition={"opacity 800ms ease-out"}
 			position={"relative"}
 			w={"100%"}
 			h={"fit-content"}
@@ -56,7 +56,7 @@ export default function Projects() {
 			>
 				<Text
 					right={containerInView ? 0 : "50px"}
-					transition="right 1000ms"
+					transition="right 1000ms ease-out"
 					position={"relative"}
 					boxSizing="border-box"
 					p={["0", , , "0 0 15px 15px"]}
@@ -74,6 +74,7 @@ export default function Projects() {
 					position={"relative"}
 					transition={"1000ms"}
 					transitionProperty={"opacity, right"}
+					transitionTimingFunction={"ease-out"}
 					p={[, , , "0 0 0 15px"]}
 					m="10px 0 50px 0"
 					h="fit-content"
@@ -140,6 +141,7 @@ export default function Projects() {
 					position={"relative"}
 					transition={"1000ms"}
 					transitionProperty={"opacity, right"}
+					transitionTimingFunction={"ease-out"}
 					p={[, , , "0 0 0 15px"]}
 					m="0 0 50px 0"
 					h="fit-content"
@@ -205,6 +207,7 @@ export default function Projects() {
 					position={"relative"}
 					transition={"1000ms"}
 					transitionProperty={"opacity, right"}
+					transitionTimingFunction={"ease-out"}
 					p={[, , , "0 0 0 15px"]}
 					m={"0 0 50px 0"}
 					h={"fit-content"}
@@ -270,6 +273,7 @@ export default function Projects() {
 					position={"relative"}
 					transition={"1000ms"}
 					transitionProperty={"opacity, right"}
+					transitionTimingFunction={"ease-out"}
 					p={[, , , "0 0 0 15px"]}
 					m="0 0 50px 0"
 					h="fit-content"

@@ -22,7 +22,7 @@ export default function Experience() {
 		<Flex
 			ref={containerRef}
 			opacity={containerInView ? 1 : 0}
-			transition={"opacity 800ms"}
+			transition={"opacity 800ms ease-out"}
 			position={"relative"}
 			w={"100%"}
 			h={"fit-content"}
@@ -48,7 +48,7 @@ export default function Experience() {
 			>
 				<Text
 					right={containerInView ? 0 : "50px"}
-					transition="right 1000ms"
+					transition="right 1000ms ease-out"
 					position={"relative"}
 					boxSizing="border-box"
 					p={["0", , , "0 0 5px 15px"]}
@@ -75,6 +75,7 @@ export default function Experience() {
 							right={oneInView ? 0 : "50px"}
 							position="relative"
 							transition={"1000ms"}
+							transitionTimingFunction={"ease-out"}
 							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
@@ -153,6 +154,7 @@ export default function Experience() {
 							right={twoInView ? 0 : "50px"}
 							position={"relative"}
 							transition={"1000ms"}
+							transitionTimingFunction={"ease-out"}
 							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
@@ -222,6 +224,7 @@ export default function Experience() {
 							right={threeInView ? 0 : "50px"}
 							position={"relative"}
 							transition={"1000ms"}
+							transitionTimingFunction={"ease-out"}
 							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">

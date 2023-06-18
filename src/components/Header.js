@@ -70,6 +70,7 @@ export default function Header({ tabWidth }) {
 					zIndex={"300"}
 					left={"0"}
 					transitionProperty={"top, opacity"}
+					transitionTimingFunction={"ease-out"}
 					// boxShadow="-5px 5px 80px 0 #191414"
 				>
 					{/* <Flex cursor="pointer" position="absolute" left="25px">
