@@ -38,18 +38,18 @@ export default function Projects() {
 			id="projects"
 			scrollMarginTop={"30px"}
 			zIndex={"100"}
-			bgColor={"#212428"}
+			bgColor={"#e3f2e6"}
 		>
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderTop={[, , , "1px solid #f6f7f9"]}
+				borderTop={[, , , "1px solid #0f1f11"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
-				color="#f6f7f9"
+				color="#0f1f11"
 				justify={"flex-start"}
 				alignItems={"stretch"}
 				fontSize={["0.8em", , , "0.9em"]}
@@ -59,10 +59,10 @@ export default function Projects() {
 					transition="right 1000ms ease-out"
 					position={"relative"}
 					boxSizing="border-box"
-					p={["0", , , "0 0 15px 15px"]}
+					p={["0", , , "0 0 5px 15px"]}
 					w={"100%"}
 					h="fit-content"
-					fontWeight="400"
+					fontWeight="500"
 					fontSize={"2.8em"}
 				>
 					Projects
@@ -82,7 +82,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,0.6)"}
+						border={"2px solid rgba(15,31,17,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/quickchat.png"}
 						w={["100%", , , "40%"]}
@@ -93,7 +93,7 @@ export default function Projects() {
 						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#00ff00"} fontSize={"1.7em"}>
+						<Text color={"#00bb00"} fontSize={"1.7em"}>
 							QuickChat
 						</Text>
 						<Text m="0 0 15px 0">
@@ -112,7 +112,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://quickchat-video.netlify.app"
 								isExternal
@@ -124,7 +124,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://github.com/mikey712712/Video-Chat-App"
 								isExternal
@@ -149,7 +149,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,0.6)"}
+						border={"2px solid rgba(15,31,17,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/gridfight.png"}
 						w={["100%", , , "40%"]}
@@ -160,7 +160,7 @@ export default function Projects() {
 						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#00ff00"} fontSize={"1.7em"}>
+						<Text color={"#00bb00"} fontSize={"1.7em"}>
 							Grid Fight
 						</Text>
 						<Text m="0 0 15px 0">
@@ -178,7 +178,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://grid-fight-2022.netlify.app/"
 								isExternal
@@ -190,7 +190,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://github.com/mikey712712/Grid-Fight"
 								isExternal
@@ -215,7 +215,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,0.6)"}
+						border={"2px solid rgba(15,31,17,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/projecttracker.png"}
 						w={["100%", , , "40%"]}
@@ -226,7 +226,7 @@ export default function Projects() {
 						alignSelf="flex-start"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#00ff00"} fontSize={"1.7em"}>
+						<Text color={"#00bb00"} fontSize={"1.7em"}>
 							CRUD Project Tracker
 						</Text>
 						<Text m="0 0 15px 0">
@@ -244,7 +244,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://project-tracker-web.up.railway.app/"
 								isExternal
@@ -256,7 +256,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://github.com/mikey712712/project-tracker"
 								isExternal
@@ -281,7 +281,7 @@ export default function Projects() {
 				>
 					<Image
 						zIndex={"150"}
-						border={"2px solid rgba(255,255,255,0.6)"}
+						border={"2px solid rgba(15,31,17,0.7)"}
 						borderRadius={"15px"}
 						src={"./images/tictactoe.png"}
 						w={["100%", , , "40%"]}
@@ -292,7 +292,7 @@ export default function Projects() {
 						alignSelf="center"
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
-						<Text color={"#00ff00"} fontSize={"1.7em"}>
+						<Text color={"#00bb00"} fontSize={"1.7em"}>
 							Tic-Tac-Toe/Connect-4
 						</Text>
 						<Text m="0 0 15px 0">
@@ -308,7 +308,7 @@ export default function Projects() {
 							<strong>Deployed Site: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://mikey712712.github.io/Tic-Tac-Toe/"
 								isExternal
@@ -320,7 +320,7 @@ export default function Projects() {
 							<strong>Github Repository: </strong>
 							<Link
 								_hover={{
-									color: "#00ff00",
+									color: "#00bb00",
 								}}
 								href="https://github.com/mikey712712/Tic-Tac-Toe"
 								isExternal

@@ -62,9 +62,9 @@ export default function Header({ tabWidth }) {
 					position={"fixed"}
 					alignItems={"center"}
 					justifyContent="center"
-					color={"#ebebeb"}
+					color={"#0f1f11"}
 					h="56px"
-					bgColor="rgba(33,36,40,0.8)"
+					bgColor="rgba(227,242,230,0.8)"
 					backdropFilter={"blur(4px)"}
 					className="header"
 					zIndex={"300"}
@@ -89,7 +89,7 @@ export default function Header({ tabWidth }) {
 					</Flex> */}
 					<Flex
 						_hover={{
-							color: "#00ff00",
+							color: "#00bb00",
 						}}
 						cursor={"pointer"}
 						m="0 30px"
@@ -102,14 +102,14 @@ export default function Header({ tabWidth }) {
 							})
 						}
 					>
-						<Text color={"#00ff00"} marginRight={"5px"}>
+						<Text color={"#00bb00"} marginRight={"5px"}>
 							01.
 						</Text>
 						<Text>Back to Top</Text>
 					</Flex>
 					<Flex
 						_hover={{
-							color: "#00ff00",
+							color: "#00bb00",
 						}}
 						cursor={"pointer"}
 						m="0 30px"
@@ -121,14 +121,14 @@ export default function Header({ tabWidth }) {
 							})
 						}}
 					>
-						<Text color={"#00ff00"} marginRight={"5px"}>
+						<Text color={"#00bb00"} marginRight={"5px"}>
 							02.
 						</Text>
 						<Text>Skills</Text>
 					</Flex>
 					<Flex
 						_hover={{
-							color: "#00ff00",
+							color: "#00bb00",
 						}}
 						cursor={"pointer"}
 						m="0 30px"
@@ -140,14 +140,14 @@ export default function Header({ tabWidth }) {
 							})
 						}}
 					>
-						<Text color={"#00ff00"} marginRight={"5px"}>
+						<Text color={"#00bb00"} marginRight={"5px"}>
 							03.
 						</Text>
 						<Text>Experience</Text>
 					</Flex>
 					<Flex
 						_hover={{
-							color: "#00ff00",
+							color: "#00bb00",
 						}}
 						cursor={"pointer"}
 						m="0 30px"
@@ -159,14 +159,14 @@ export default function Header({ tabWidth }) {
 							})
 						}}
 					>
-						<Text color={"#00ff00"} marginRight={"5px"}>
+						<Text color={"#00bb00"} marginRight={"5px"}>
 							04.
 						</Text>
 						<Text>Projects</Text>
 					</Flex>
 					<Flex
 						_hover={{
-							color: "#00ff00",
+							color: "#00bb00",
 						}}
 						cursor={"pointer"}
 						m="0 30px"
@@ -177,7 +177,7 @@ export default function Header({ tabWidth }) {
 							})
 						}
 					>
-						<Text color={"#00ff00"} marginRight={"5px"}>
+						<Text color={"#00bb00"} marginRight={"5px"}>
 							05.
 						</Text>
 						<Text>Contact</Text>

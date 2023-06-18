@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700&display=swap");
 
 html {
-	background-color: #212428;
+	background-color: #e3f2e6;
 }
 #root {
 	width: 100vw;
 	min-height: 100vh !important;
 	font-family: "Sono", sans-serif !important;
-	background-color: #212428;
+	background-color: #e3f2e6;
 }
 
 .header {
@@ -24,5 +24,5 @@ body::-webkit-scrollbar {
 }
 
 i {
-	font-weight: 300;
+	font-weight: 400;
 }

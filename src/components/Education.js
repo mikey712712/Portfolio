@@ -26,12 +26,12 @@ export default function Education() {
 			boxSizing={"border-box"}
 			id="education"
 			zIndex={"100"}
-			bgColor={"#212428"}
+			bgColor={"#e3f2e6"}
 		>
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderTop={[, , , "1px solid #f6f7f9"]}
+				borderTop={[, , , "1px solid #0f1f11"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
@@ -47,11 +47,11 @@ export default function Education() {
 					transition="left 1000ms ease-out"
 					position={"relative"}
 					boxSizing="border-box"
-					p={["0", , , "0 0 5px 5px"]}
+					p={["0", , , "0 0 5px 0px"]}
 					w={"100%"}
 					h="fit-content"
-					color={"#f6f7f9"}
-					fontWeight="400"
+					color={"#0f1f11"}
+					fontWeight="500"
 					fontSize={"2.8em"}
 				>
 					Education
@@ -64,7 +64,7 @@ export default function Education() {
 							p={["0", , , "0 0 15px 5px"]}
 							w={"100%"}
 							h="fit-content"
-							fontWeight="400"
+							fontWeight="500"
 							fontSize={"1.15em"}
 							ref={refOne}
 							opacity={oneInView ? 1 : 0}
@@ -74,17 +74,17 @@ export default function Education() {
 							transitionTimingFunction={"ease-out"}
 							transitionProperty={"opacity, left"}
 						>
-							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
+							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
 								SE Immersive Bootcamp - <i>General Assembly</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
 								SEP 2022 - NOV 2022
 							</Text>
-							<List color={"#f6f7f9"} fontSize="0.7em" spacing="5px">
+							<List color={"#0f1f11"} fontSize="0.7em" spacing="5px">
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>Developed and deployed full-stack applications utilising various technologies learnt throughout the course.</Text>
 									</Flex>
@@ -92,7 +92,7 @@ export default function Education() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>All major projects completed are detailed below</Text>
 									</Flex>
@@ -107,7 +107,7 @@ export default function Education() {
 							p={["0", , , "0 0 15px 5px"]}
 							w={"100%"}
 							h="fit-content"
-							fontWeight="400"
+							fontWeight="500"
 							fontSize={"1.15em"}
 							ref={refTwo}
 							opacity={twoInView ? 1 : 0}
@@ -117,17 +117,17 @@ export default function Education() {
 							transitionTimingFunction={"ease-out"}
 							transitionProperty={"opacity, left"}
 						>
-							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
+							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
 								Bachelor of Aerospace Engineering - <i>UNSW</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
 								JAN 2019 - JULY 2022
 							</Text>
-							<List color={"#f6f7f9"} fontSize="0.7em" spacing={"5px"}>
+							<List color={"#0f1f11"} fontSize="0.7em" spacing={"5px"}>
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>WAM: 77.64 (3rd Year).</Text>
 									</Flex>

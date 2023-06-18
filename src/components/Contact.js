@@ -19,18 +19,18 @@ export default function Contact() {
 			boxSizing={"border-box"}
 			zIndex={"100"}
 			id="contact"
-			bgColor={"#212428"}
+			bgColor={"#e3f2e6"}
 		>
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderTop={[, , , "1px solid #f6f7f9"]}
+				borderTop={[, , , "1px solid #0f1f11"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
-				color="#f6f7f9"
+				color="#0f1f11"
 				justify={"flex-start"}
 				alignItems={"stretch"}
 				fontSize={["0.8em", , , "0.9em"]}

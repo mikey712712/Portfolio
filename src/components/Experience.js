@@ -30,18 +30,17 @@ export default function Experience() {
 			id="experience"
 			scrollMarginTop={"30px"}
 			zIndex={"100"}
-			bgColor={"#212428"}
+			bgColor={"#e3f2e6"}
 		>
 			<Flex
 				position={"relative"}
 				flexFlow="column nowrap"
-				borderTop={[, , , "1px solid #f6f7f9"]}
+				borderTop={[, , , "1px solid #0f1f11"]}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 30px 30px"
 				fontFamily={"Sono, sans-serif"}
-				// color="white"
 				justify={"flex-start"}
 				alignItems={"stretch"}
 				fontSize={["0.8em", , , "0.9em"]}
@@ -51,24 +50,24 @@ export default function Experience() {
 					transition="right 1000ms ease-out"
 					position={"relative"}
 					boxSizing="border-box"
-					p={["0", , , "0 0 5px 15px"]}
+					p={["0", , , "0 0 5px 10px"]}
 					w={"100%"}
 					h="fit-content"
-					color={"#f6f7f9"}
-					fontWeight="400"
+					color={"#0f1f11"}
+					fontWeight="500"
 					fontSize={"2.8em"}
 				>
 					Experience
 				</Text>
 				<Grid gridTemplateRows={"auto auto auto"} gridTemplateColumns={"1fr"} autoFlow="column">
-					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(246,247,249,0.3)"]}>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(15,31,17,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
 							p={["0", , , "0 0 15px 15px"]}
 							w={"100%"}
 							h="fit-content"
-							fontWeight="400"
+							fontWeight="500"
 							fontSize={"1.15em"}
 							ref={refOne}
 							opacity={oneInView ? 1 : 0}
@@ -78,17 +77,17 @@ export default function Experience() {
 							transitionTimingFunction={"ease-out"}
 							transitionProperty={"right, opacity"}
 						>
-							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
+							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
 								Software Engineering Instructor Associate - <i>General Assembly</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
 								FEB 2023 - MAY 2023
 							</Text>
-							<List color={"#f6f7f9"} fontSize="0.7em" spacing="5px">
+							<List color={"#0f1f11"} fontSize="0.7em" spacing="5px">
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>
 											Taught software development concepts to students of various skill levels, focusing on fundamental concepts and
@@ -99,7 +98,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>
 											Developed and updated course materials, assignments, and assessments to ensure effective instruction and alignment
@@ -110,7 +109,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>
 											Collaborated with other instructors and program managers to deliver high-quality instruction and support for
@@ -121,7 +120,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>
 											Provided feedback and guidance to students on their code and projects, using a supportive and growth-oriented
@@ -132,7 +131,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>Demonstrated a strong commitment to student success and continuous improvement.</Text>
 									</Flex>
@@ -140,14 +139,14 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(246,247,249,0.3)"]}>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(15,31,17,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
 							p={["0", , , "0 0 15px 15px"]}
 							w={"100%"}
 							h="fit-content"
-							fontWeight="400"
+							fontWeight="500"
 							fontSize={"1.15em"}
 							ref={refTwo}
 							opacity={twoInView ? 1 : 0}
@@ -157,17 +156,17 @@ export default function Experience() {
 							transitionTimingFunction={"ease-out"}
 							transitionProperty={"right, opacity"}
 						>
-							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
+							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
 								Team Lead - <i>Be Cool Refrigerated Courier Group</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
 								DEC 2019 - JULY 2022
 							</Text>
-							<List color={"#f6f7f9"} fontSize="0.7em" spacing={"5px"}>
+							<List color={"#0f1f11"} fontSize="0.7em" spacing={"5px"}>
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>Leading a team of 8-12 people, and stepping into floor management duties on occasion leading teams of 20+.</Text>
 									</Flex>
@@ -175,7 +174,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>
 											Responsible for training new employees on process, procedure and compliance as well as establishing cultural values
@@ -186,7 +185,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>Worked closely with other supervisors and senior management to ensure the efficient delegation of tasks.</Text>
 									</Flex>
@@ -194,7 +193,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>Implemented new floor layouts to increase workflow.</Text>
 									</Flex>
@@ -202,7 +201,7 @@ export default function Experience() {
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>Demonstrated a strong commitment to student success and continuous improvement.</Text>
 									</Flex>
@@ -210,14 +209,14 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(246,247,249,0.3)"]}>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(15,31,17,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
 							p={["0", , , "0 0 15px 15px"]}
 							w={"100%"}
 							h="fit-content"
-							fontWeight="400"
+							fontWeight="500"
 							fontSize={"1.15em"}
 							ref={refThree}
 							opacity={threeInView ? 1 : 0}
@@ -227,17 +226,17 @@ export default function Experience() {
 							transitionTimingFunction={"ease-out"}
 							transitionProperty={"right, opacity"}
 						>
-							<Text fontWeight={"600"} color={"#f6f7f9"} m="0">
+							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
 								Team Member - <i>Be Cool Refrigerated Courier Group</i>
 							</Text>
-							<Text m="0 0 5px 0" color={"#00ff00"} fontSize="0.7em">
+							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
 								OCT 2018 - DEC 2019
 							</Text>
-							<List color={"#f6f7f9"} fontSize="0.7em" spacing="5px">
+							<List color={"#0f1f11"} fontSize="0.7em" spacing="5px">
 								<ListItem>
 									<Flex alignItems={"center"} gap="7px">
 										<Text fontSize="1.2em">
-											<BsCheck color={"00ff00"} />
+											<BsCheck color={"00bb00"} />
 										</Text>
 										<Text>
 											Contributed to the completion of tasks around the facility, working as both a store worker and forklift operator.

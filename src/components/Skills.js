@@ -31,7 +31,7 @@ export default function Skills() {
 			// top={inView ? "80px" : "0"}
 			zIndex={"100"}
 			position={"relative"}
-			bgColor={"#212428"}
+			bgColor={"#e3f2e6"}
 			transition={"opacity 800ms ease-out"}
 			w={"100%"}
 			h={"fit-content"}
@@ -42,31 +42,30 @@ export default function Skills() {
 			<Flex
 				position={"relative"}
 				flexFlow={["column nowrap", "column nowrap", "column nowrap", "row wrap"]}
-				borderRadius={"5px"}
-				border={[, , , "1px solid #f6f7f9"]}
+				borderRadius={"8px"}
 				w={"100%"}
 				h={"100%"}
 				boxSizing="border-box"
 				p="30px 30px 20px 30px"
 				fontFamily={"Sono, sans-serif"}
-				color="#f6f7f9"
+				color="#0f1f11"
 				justify={"flex-start"}
 				alignItems={"stretch"}
-				bgColor={"#242f2a"}
+				bgColor={"rgba(15,31,17,0.1)"}
 				fontSize={["0.8em", , , "1.05em"]}
 			>
-				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="400" fontSize={"2.6em"}>
+				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="500" fontSize={"2.6em"}>
 					Skills
 				</Text>
 				<Flex
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
-					borderRight={["unset", "unset", "unset", "1px solid #f6f7f9"]}
-					borderBottom={["1px solid #f6f7f9", "1px solid #f6f7f9", "1px solid #f6f7f9", "unset"]}
+					borderRight={["unset", "unset", "unset", "1px solid rgba(15,31,17,0.4)"]}
+					borderBottom={["1px solid rgba(15,31,17,0.4)", "1px solid rgba(15,31,17,0.4)", "1px solid rgba(15,31,17,0.4)", "unset"]}
 					w={["100%", "100%", "100%", "50%"]}
 				>
-					<Text color={"#00ff00"} w="90%" fontSize={"1.5em"}>
+					<Text color={"#00bb00"} w="90%" fontSize={"1.4em"} fontWeight={"500"}>
 						Frontend Design
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
@@ -88,9 +87,9 @@ export default function Skills() {
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
-					borderBottom={["1px solid #f6f7f9", "1px solid #f6f7f9", "1px solid #f6f7f9", "unset"]}
+					borderBottom={["1px solid rgba(15,31,17,0.4)", "1px solid rgba(15,31,17,0.4)", "1px solid rgba(15,31,17,0.4)", "unset"]}
 				>
-					<Text color={"#00ff00"} fontSize={"1.5em"}>
+					<Text color={"#00bb00"} fontSize={"1.4em"} fontWeight={"500"}>
 						Software Development
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
@@ -106,15 +105,15 @@ export default function Skills() {
 					</Flex>
 				</Flex>
 				<Flex
-					borderBottom={["1px solid #f6f7f9", "1px solid #f6f7f9", "1px solid #f6f7f9", "unset"]}
-					borderRight={["unset", "unset", "unset", "1px solid #f6f7f9"]}
-					borderTop={["unset", "unset", "unset", "1px solid #f6f7f9"]}
+					borderBottom={["1px solid rgba(15,31,17,0.4)", "1px solid rgba(15,31,17,0.4)", "1px solid rgba(15,31,17,0.4)", "unset"]}
+					borderRight={["unset", "unset", "unset", "1px solid rgba(15,31,17,0.4)"]}
+					borderTop={["unset", "unset", "unset", "1px solid rgba(15,31,17,0.4)"]}
 					flexFlow={"column nowrap"}
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
 				>
-					<Text color={"#00ff00"} fontSize={"1.5em"}>
+					<Text color={"#00bb00"} fontSize={"1.4em"} fontWeight={"500"}>
 						Database Management
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
@@ -132,9 +131,9 @@ export default function Skills() {
 					boxSizing="border-box"
 					p={"15px"}
 					w={["100%", "100%", "100%", "50%"]}
-					borderTop={["unset", "unset", "unset", "1px solid #f6f7f9"]}
+					borderTop={["unset", "unset", "unset", "1px solid rgba(15,31,17,0.4)"]}
 				>
-					<Text color={"#00ff00"} fontSize={"1.5em"}>
+					<Text color={"#00bb00"} fontSize={"1.4em"} fontWeight={"500"}>
 						Problem Solving
 					</Text>
 					<Text marginBottom={"auto"} w="95%">

@@ -10,9 +10,8 @@ export default function Welcome({ tabWidth }) {
 	useEffect(() => {
 		const welcome = document.querySelector(".welcome")
 		const head = document.querySelector(".header")
-		document.querySelectorAll(".welcome-char").forEach((e) => (e.style.textDecoration = "none"))
+		document.querySelectorAll(".welcome-char").forEach((e) => (e.style.opacity = "0"))
 		welcome.style.transition = 0
-		welcome.style.top = "-60px"
 		welcome.style.opacity = 0
 		if (tabWidth > 1000) {
 			head.style.transition = 0
@@ -22,16 +21,15 @@ export default function Welcome({ tabWidth }) {
 
 		setTimeout(() => {
 			welcome.style.transition = "2000ms cubic-bezier(0.25, 1, 0.5, 1)"
-			welcome.style.top = "0px"
 			welcome.style.opacity = 1
-		}, 200)
+		}, 500)
 		setTimeout(() => {
 			if (tabWidth > 1000) {
 				head.style.transition = "2000ms cubic-bezier(0.25, 1, 0.5, 1)"
 				head.style.top = "0px"
 				head.style.opacity = 1
 			}
-		}, 1000)
+		}, 300)
 		setTimeout(() => {
 			let wordLength = 0
 			for (let i = 0; i < 1; i++) {
@@ -39,19 +37,20 @@ export default function Welcome({ tabWidth }) {
 				setTimeout(() => {
 					for (let node of document.querySelector(`.word${i}`).childNodes) {
 						setTimeout(() => {
-							node.style.textDecoration = "underline"
-							node.style.textDecorationThickness = "4px"
-							node.style.textDecorationColor = "#00ff00"
+							// node.style.textDecoration = "underline"
+							// node.style.textDecorationThickness = "4px"
+							// node.style.textDecorationColor = "#00ff00"
+							node.style.opacity = "1"
 						}, letterIndex * 100)
 						setTimeout(() => {
-							node.style.color = "#ebebeb"
+							node.style.color = "#0f1f11"
 						}, letterIndex * 100 + 450)
 						letterIndex += 1
 					}
 				}, wordLength * 100)
 				wordLength += document.querySelector(`.word${i}`).childNodes.length
 			}
-		}, 2900)
+		}, 2000)
 		setTimeout(() => {
 			let wordLength = 0
 			for (let i = 1; i < 4; i++) {
@@ -59,19 +58,20 @@ export default function Welcome({ tabWidth }) {
 				setTimeout(() => {
 					for (let node of document.querySelector(`.word${i}`).childNodes) {
 						setTimeout(() => {
-							node.style.textDecoration = "underline"
-							node.style.textDecorationThickness = "4px"
-							node.style.textDecorationColor = "#00ff00"
+							node.style.opacity = "1"
+							// node.style.textDecoration = "underline"
+							// node.style.textDecorationThickness = "4px"
+							// node.style.textDecorationColor = "#00ff00"
 						}, letterIndex * 100)
 						setTimeout(() => {
-							node.style.color = "#ebebeb"
+							node.style.color = "#0f1f11"
 						}, letterIndex * 100 + 450)
 						letterIndex += 1
 					}
 				}, wordLength * 100)
 				wordLength += document.querySelector(`.word${i}`).childNodes.length
 			}
-		}, 3400)
+		}, 2800)
 		setTimeout(() => {
 			let wordLength = 0
 			for (let i = 4; i < 8; i++) {
@@ -79,19 +79,20 @@ export default function Welcome({ tabWidth }) {
 				setTimeout(() => {
 					for (let node of document.querySelector(`.word${i}`).childNodes) {
 						setTimeout(() => {
-							node.style.textDecoration = "underline"
-							node.style.textDecorationThickness = "4px"
-							node.style.textDecorationColor = "#00ff00"
+							node.style.opacity = "1"
+							// node.style.textDecoration = "underline"
+							// node.style.textDecorationThickness = "4px"
+							// node.style.textDecorationColor = "#00ff00"
 						}, letterIndex * 100)
 						setTimeout(() => {
-							node.style.color = "#ebebeb"
+							node.style.color = "#0f1f11"
 						}, letterIndex * 100 + 450)
 						letterIndex += 1
 					}
 				}, wordLength * 100)
 				wordLength += document.querySelector(`.word${i}`).childNodes.length
 			}
-		}, 5300)
+		}, 4700)
 	}, [])
 
 	const WelcomeMessage = ({ message, index }) => {
@@ -106,17 +107,18 @@ export default function Welcome({ tabWidth }) {
 					{message.split("").map((char, i) => {
 						return (
 							<Heading
-								fontWeight={"300"}
+								fontWeight={"400"}
 								transition={"400ms"}
-								color="#ebebeb"
+								color="#0f1f11"
 								cursor={"default"}
 								fontSize={index < 2 || index > 3 ? ["1em", "1.5em", "2em"] : ["2em", "3em", "4em"]}
 								className="welcome-char"
 								fontFamily={"Sono, sans-serif"}
 								key={i}
-								textDecoration="underline"
-								textDecorationThickness="4px"
-								textDecorationColor="#00ff00"
+								opacity={"1"}
+								// textDecoration="underline"
+								// textDecorationThickness="4px"
+								// textDecorationColor="#00ff00"
 							>
 								{char}
 							</Heading>
@@ -205,7 +207,7 @@ export default function Welcome({ tabWidth }) {
 					>
 						<Box
 							transition="opacity 400ms ease-out"
-							bgColor={"#242f2a"}
+							bgColor={"#313130"}
 							color={"#00ff00"}
 							w="100%"
 							h="100%"
@@ -248,7 +250,7 @@ export default function Welcome({ tabWidth }) {
 					>
 						<Box
 							transition="opacity 400ms ease-out"
-							bgColor={"#242f2a"}
+							bgColor={"#313130"}
 							color={"#00ff00"}
 							borderRadius="8px"
 							w="100%"
@@ -275,18 +277,18 @@ export default function Welcome({ tabWidth }) {
 								w={"8px"}
 								h={"8px"}
 								marginRight={"5px"}
-								backgroundColor={activeCard === 1 ? "#00ff00" : null}
+								backgroundColor={activeCard === 1 ? "#00bb00" : null}
 								borderRadius={"4px"}
-								border={"1px solid #f6f7f9"}
+								border={"1px solid #00bb00"}
 								transition={"background-color 400ms"}
 							></Box>
 							<Box
 								w={"8px"}
 								h={"8px"}
 								marginLeft={"5px"}
-								backgroundColor={activeCard === 2 ? "#00ff00" : null}
+								backgroundColor={activeCard === 2 ? "#00bb00" : null}
 								borderRadius={"4px"}
-								border={"1px solid #f6f7f9"}
+								border={"1px solid #00bb00"}
 								transition={"background-color 400ms"}
 							></Box>
 						</Flex>
@@ -316,8 +318,10 @@ export default function Welcome({ tabWidth }) {
 							fontSize={"1.3em"}
 							onClick={(e) => handleArrowClick(e)}
 							onTouchEnd={(e) => handleArrowClick(e)}
+							bgColor={"#00bb00"}
+							color="#313130"
 							_hover={{
-								bgColor: "#242f2a",
+								bgColor: "#313130",
 								color: "#f6f7f9",
 							}}
 							// opacity={activeCard === 1 ? "1" : "0"}

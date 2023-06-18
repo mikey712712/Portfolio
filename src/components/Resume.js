@@ -26,7 +26,7 @@ export default function Resume() {
 		>
 			<Button
 				zIndex={"150"}
-				bgColor={"#00ff00"}
+				bgColor={"#313130"}
 				display={"flex"}
 				justifyContent={"space-between"}
 				fontSize={"1.1em"}
@@ -34,10 +34,10 @@ export default function Resume() {
 				w="fit-content"
 				p="20px"
 				gap={"10px"}
-				color={"#212428"}
+				color={"#f6f7f9"}
 				_hover={{
-					bgColor: "#313130",
-					color: "#f6f7f9",
+					bgColor: "#00bb00",
+					color: "#212428",
 				}}
 				onClick={openTab}
 			>
