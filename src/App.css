@@ -26,3 +26,6 @@ body::-webkit-scrollbar {
 i {
 	font-weight: 400;
 }
+form {
+	width: 100%;
+}
