@@ -1,11 +1,8 @@
-import { Box, Flex, grid, Image, Link, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, grid, Image, Link, Text } from "@chakra-ui/react"
+import { RiExternalLinkLine } from "react-icons/ri"
 import { useInView } from "react-intersection-observer"
 
 export default function Projects() {
-	// const [containerHeight, setContainerHeight] = useState(null)
-	// useEffect(() => {
-	// 	setContainerHeight(document.querySelector("#projects").scrollHeight)
-	// }, [tabWidth])
 	const { ref: containerRef, inView: containerInView } = useInView({
 		threshold: 0,
 		triggerOnce: true,
@@ -26,6 +23,10 @@ export default function Projects() {
 		threshold: 0,
 		triggerOnce: true,
 	})
+
+	const openTab = (url) => {
+		window.open(url, "_blank")
+	}
 	return (
 		<Flex
 			ref={containerRef}
@@ -108,30 +109,52 @@ export default function Projects() {
 							Web Real-Time Communication (WebRTC) to store peer connection info into Firebase's RealtimeDB. User authentication was implemented
 							through FirebaseAuth. All other non-sensitive data was stored in Firebase's FireStore. The app is deployed through Netlify.
 						</Text>
-						<Text>
-							<strong>Deployed Site: </strong>
-							<Link
+						<Flex gap={"10px"}>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://quickchat-video.netlify.app"
-								isExternal
+								onClick={() => {
+									openTab("https://quickchat-video.netlify.app")
+								}}
 							>
-								https://quickchat-video.netlify.app
-							</Link>
-						</Text>
-						<Text>
-							<strong>Github Repository: </strong>
-							<Link
+								<Text>Deployed Site</Text>
+								<RiExternalLinkLine />
+							</Button>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://github.com/mikey712712/Video-Chat-App"
-								isExternal
+								onClick={() => {
+									openTab("https://github.com/mikey712712/Video-Chat-App")
+								}}
 							>
-								https://github.com/mikey712712/Video-Chat-App
-							</Link>
-						</Text>
+								<Text>Github Repository</Text>
+								<RiExternalLinkLine />
+							</Button>
+						</Flex>
 					</Box>
 				</Flex>
 				<Flex
@@ -174,30 +197,52 @@ export default function Projects() {
 							user's turn, their actions write which functions are called to the database, the opponent's client listens for changes in the
 							database and runs the same functions on their end. The app is deployed through Netlify.
 						</Text>
-						<Text>
-							<strong>Deployed Site: </strong>
-							<Link
+						<Flex gap={"10px"}>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://grid-fight-2022.netlify.app/"
-								isExternal
+								onClick={() => {
+									openTab("https://grid-fight-2022.netlify.app/")
+								}}
 							>
-								https://grid-fight-2022.netlify.app
-							</Link>
-						</Text>
-						<Text>
-							<strong>Github Repository: </strong>
-							<Link
+								<Text>Deployed Site</Text>
+								<RiExternalLinkLine />
+							</Button>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://github.com/mikey712712/Grid-Fight"
-								isExternal
+								onClick={() => {
+									openTab("https://github.com/mikey712712/Grid-Fight")
+								}}
 							>
-								https://github.com/mikey712712/Grid-Fight
-							</Link>
-						</Text>
+								<Text>Github Repository</Text>
+								<RiExternalLinkLine />
+							</Button>
+						</Flex>
 					</Box>
 				</Flex>
 				<Flex
@@ -240,30 +285,52 @@ export default function Projects() {
 							Bootstap. The backend CRUD routes are set up using Node.js with Express.js, and communicates with MongoDB Atlas and Cloudinary for
 							database storage. The app is deployed through Heroku.
 						</Text>
-						<Text>
-							<strong>Deployed Site: </strong>
-							<Link
+						<Flex gap={"10px"}>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://project-tracker-web.up.railway.app/"
-								isExternal
+								onClick={() => {
+									openTab("https://project-tracker-web.up.railway.app/")
+								}}
 							>
-								https://project-tracker-web.up.railway.app/
-							</Link>
-						</Text>
-						<Text>
-							<strong>Github Repository: </strong>
-							<Link
+								<Text>Deployed Site</Text>
+								<RiExternalLinkLine />
+							</Button>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://github.com/mikey712712/project-tracker"
-								isExternal
+								onClick={() => {
+									openTab("https://github.com/mikey712712/project-tracker")
+								}}
 							>
-								https://github.com/mikey712712/project-tracker
-							</Link>
-						</Text>
+								<Text>Github Repository</Text>
+								<RiExternalLinkLine />
+							</Button>
+						</Flex>
 					</Box>
 				</Flex>
 				<Flex
@@ -304,30 +371,52 @@ export default function Projects() {
 						<Text m="0 0 15px 0">
 							<strong>Technologies:</strong> This app was created using HTML5, CSS3 and JavaScript and deployed through Github Pages.
 						</Text>
-						<Text>
-							<strong>Deployed Site: </strong>
-							<Link
+						<Flex gap={"10px"}>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://mikey712712.github.io/Tic-Tac-Toe/"
-								isExternal
+								onClick={() => {
+									openTab("https://mikey712712.github.io/Tic-Tac-Toe/")
+								}}
 							>
-								https://mikey712712.github.io/Tic-Tac-Toe/
-							</Link>
-						</Text>
-						<Text>
-							<strong>Github Repository: </strong>
-							<Link
+								<Text>Deployed Site</Text>
+								<RiExternalLinkLine />
+							</Button>
+							<Button
+								zIndex={"150"}
+								bgColor={"#313130"}
+								display={"flex"}
+								justifyContent={"space-between"}
+								fontSize={"1em"}
+								fontWeight={"500"}
+								w="fit-content"
+								p="20px"
+								gap={"10px"}
+								color={"#f6f7f9"}
 								_hover={{
-									color: "#00bb00",
+									bgColor: "#00bb00",
+									color: "#212428",
 								}}
-								href="https://github.com/mikey712712/Tic-Tac-Toe"
-								isExternal
+								onClick={() => {
+									openTab("https://github.com/mikey712712/Tic-Tac-Toe")
+								}}
 							>
-								https://github.com/mikey712712/Tic-Tac-Toe
-							</Link>
-						</Text>
+								<Text>Github Repository</Text>
+								<RiExternalLinkLine />
+							</Button>
+						</Flex>
 					</Box>
 				</Flex>
 			</Flex>
