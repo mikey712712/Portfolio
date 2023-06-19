@@ -67,10 +67,11 @@ export default function Contact() {
 								bgColor={"#313130"}
 								display={"flex"}
 								justifyContent={"center"}
-								fontSize={"1.1em"}
+								fontSize={"1.4em"}
 								fontWeight={"500"}
 								w="fit-content"
-								p="15px"
+								p="8px 0"
+								h={"fit-content"}
 								gap={"10px"}
 								color={"#f6f7f9"}
 								_hover={{
@@ -81,7 +82,6 @@ export default function Contact() {
 									openTab("mailto:michaelholton712@gmail.com")
 								}}
 							>
-								<Text>Email</Text>
 								<MdEmail />
 							</Button>
 							<Button
@@ -89,10 +89,11 @@ export default function Contact() {
 								bgColor={"#313130"}
 								display={"flex"}
 								justifyContent={"center"}
-								fontSize={"1.1em"}
+								fontSize={"1.4em"}
 								fontWeight={"500"}
 								w="fit-content"
-								p="15px"
+								p="8px 0"
+								h={"fit-content"}
 								gap={"10px"}
 								color={"#f6f7f9"}
 								_hover={{
@@ -103,7 +104,6 @@ export default function Contact() {
 									openTab("https://www.linkedin.com/in/michaelholton-dev/")
 								}}
 							>
-								<Text>LinkedIn</Text>
 								<RiLinkedinBoxFill />
 							</Button>
 							<Button
@@ -111,10 +111,11 @@ export default function Contact() {
 								bgColor={"#313130"}
 								display={"flex"}
 								justifyContent={"center"}
-								fontSize={"1.1em"}
+								fontSize={"1.4em"}
 								fontWeight={"500"}
 								w="fit-content"
-								p="15px"
+								p="8px 0"
+								h={"fit-content"}
 								gap={"10px"}
 								color={"#f6f7f9"}
 								_hover={{
@@ -125,7 +126,6 @@ export default function Contact() {
 									openTab("https://github.com/mikey712712/")
 								}}
 							>
-								<Text>Github</Text>
 								<RiGithubFill />
 							</Button>
 						</Flex>
