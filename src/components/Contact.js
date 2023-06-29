@@ -61,74 +61,6 @@ export default function Contact() {
 					</Text>
 
 					<Flex m={"15px auto"} w={["100%", , , "70%"]} flexFlow={"column nowrap"}>
-						<Flex mb={"15px"} w={"100%"} gap={"15px"} flexFlow={"row nowrap"}>
-							<Button
-								zIndex={"150"}
-								bgColor={"#313130"}
-								display={"flex"}
-								justifyContent={"center"}
-								fontSize={"1.4em"}
-								fontWeight={"500"}
-								w="fit-content"
-								p="8px 0"
-								h={"fit-content"}
-								gap={"10px"}
-								color={"#f6f7f9"}
-								_hover={{
-									bgColor: "#00bb00",
-									color: "#212428",
-								}}
-								onClick={() => {
-									openTab("mailto:michaelholton712@gmail.com")
-								}}
-							>
-								<MdEmail />
-							</Button>
-							<Button
-								zIndex={"150"}
-								bgColor={"#313130"}
-								display={"flex"}
-								justifyContent={"center"}
-								fontSize={"1.4em"}
-								fontWeight={"500"}
-								w="fit-content"
-								p="8px 0"
-								h={"fit-content"}
-								gap={"10px"}
-								color={"#f6f7f9"}
-								_hover={{
-									bgColor: "#00bb00",
-									color: "#212428",
-								}}
-								onClick={() => {
-									openTab("https://www.linkedin.com/in/michaelholton-dev/")
-								}}
-							>
-								<RiLinkedinBoxFill />
-							</Button>
-							<Button
-								zIndex={"150"}
-								bgColor={"#313130"}
-								display={"flex"}
-								justifyContent={"center"}
-								fontSize={"1.4em"}
-								fontWeight={"500"}
-								w="fit-content"
-								p="8px 0"
-								h={"fit-content"}
-								gap={"10px"}
-								color={"#f6f7f9"}
-								_hover={{
-									bgColor: "#00bb00",
-									color: "#212428",
-								}}
-								onClick={() => {
-									openTab("https://github.com/mikey712712/")
-								}}
-							>
-								<RiGithubFill />
-							</Button>
-						</Flex>
 						<form ref={form} onSubmit={sendEmail}>
 							<FormLabel>Name</FormLabel>
 							<Input required={true} focusBorderColor="green.300" bgColor={"rgba(0,187,0,0.1)"} type="text" name="user_name" />
@@ -136,26 +68,96 @@ export default function Contact() {
 							<Input required={true} focusBorderColor="green.300" bgColor={"rgba(0,187,0,0.1)"} type="email" name="user_email" />
 							<FormLabel mt={"10px"}>Message</FormLabel>
 							<Textarea required={true} focusBorderColor="green.300" bgColor={"rgba(0,187,0,0.1)"} name="message" />
-							<Button
-								zIndex={"150"}
-								mt={"20px"}
-								bgColor={"#313130"}
-								display={"flex"}
-								justifyContent={"center"}
-								fontSize={"1.1em"}
-								fontWeight={"500"}
-								w="fit-content"
-								p="15px"
-								gap={"10px"}
-								color={"#f6f7f9"}
-								_hover={{
-									bgColor: "#00bb00",
-									color: "#212428",
-								}}
-								type="submit"
-							>
-								Send
-							</Button>
+							<Flex justify={"space-between"} alignItems={"flex-start"} w={"100%"}>
+								<Button
+									zIndex={"150"}
+									mt={"20px"}
+									bgColor={"#313130"}
+									display={"flex"}
+									justifyContent={"center"}
+									fontSize={"1.1em"}
+									fontWeight={"500"}
+									w="fit-content"
+									p="15px"
+									gap={"10px"}
+									color={"#f6f7f9"}
+									_hover={{
+										bgColor: "#00bb00",
+										color: "#212428",
+									}}
+									type="submit"
+								>
+									Send
+								</Button>
+								<Flex mt={"20px"} w={"fit-content"} gap={"15px"} flexFlow={"row nowrap"}>
+									<Button
+										zIndex={"150"}
+										bgColor={"#313130"}
+										display={"flex"}
+										justifyContent={"center"}
+										fontSize={"1.4em"}
+										fontWeight={"500"}
+										w="fit-content"
+										p="8px 0"
+										h={"fit-content"}
+										gap={"10px"}
+										color={"#f6f7f9"}
+										_hover={{
+											bgColor: "#00bb00",
+											color: "#212428",
+										}}
+										onClick={() => {
+											openTab("mailto:michaelholton712@gmail.com")
+										}}
+									>
+										<MdEmail />
+									</Button>
+									<Button
+										zIndex={"150"}
+										bgColor={"#313130"}
+										display={"flex"}
+										justifyContent={"center"}
+										fontSize={"1.4em"}
+										fontWeight={"500"}
+										w="fit-content"
+										p="8px 0"
+										h={"fit-content"}
+										gap={"10px"}
+										color={"#f6f7f9"}
+										_hover={{
+											bgColor: "#00bb00",
+											color: "#212428",
+										}}
+										onClick={() => {
+											openTab("https://www.linkedin.com/in/michaelholton-dev/")
+										}}
+									>
+										<RiLinkedinBoxFill />
+									</Button>
+									<Button
+										zIndex={"150"}
+										bgColor={"#313130"}
+										display={"flex"}
+										justifyContent={"center"}
+										fontSize={"1.4em"}
+										fontWeight={"500"}
+										w="fit-content"
+										p="8px 0"
+										h={"fit-content"}
+										gap={"10px"}
+										color={"#f6f7f9"}
+										_hover={{
+											bgColor: "#00bb00",
+											color: "#212428",
+										}}
+										onClick={() => {
+											openTab("https://github.com/mikey712712/")
+										}}
+									>
+										<RiGithubFill />
+									</Button>
+								</Flex>
+							</Flex>
 						</form>
 					</Flex>
 				</Flex>
