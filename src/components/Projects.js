@@ -283,7 +283,7 @@ export default function Projects() {
 						<Text m="0 0 15px 0">
 							<strong>Technologies:</strong> The frontend was created using server rendered Embedded JavaScript (EJS) templates styled using
 							Bootstap. The backend CRUD routes are set up using Node.js with Express.js, and communicates with MongoDB Atlas and Cloudinary for
-							database storage. The app is deployed through Heroku.
+							database storage. The app is deployed through Railway.
 						</Text>
 						<Flex gap={"10px"}>
 							<Button
