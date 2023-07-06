@@ -51,7 +51,7 @@ export default function Skills() {
 				color="#0f1f11"
 				justify={"flex-start"}
 				alignItems={"stretch"}
-				bgColor={"rgba(15,31,17,0.1)"}
+				bgColor={"rgba(15,31,17,0.05)"}
 				fontSize={["0.8em", , , "1.05em"]}
 			>
 				<Text boxSizing="border-box" p={"0 0 0 15px"} w={"100%"} h="fit-content" fontWeight="500" fontSize={"2.6em"}>
