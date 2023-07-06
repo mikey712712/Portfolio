@@ -283,7 +283,7 @@ export default function Projects() {
 						<Text m="0 0 15px 0">
 							<strong>Technologies:</strong> The frontend was created using server rendered Embedded JavaScript (EJS) templates styled using
 							Bootstap. The backend CRUD routes are set up using Node.js with Express.js, and communicates with MongoDB Atlas and Cloudinary for
-							database storage. The app is deployed through Railway.
+							database storage. The app is deployed through Render.
 						</Text>
 						<Flex gap={"10px"}>
 							<Button
@@ -302,7 +302,7 @@ export default function Projects() {
 									color: "#212428",
 								}}
 								onClick={() => {
-									openTab("https://project-tracker-web.up.railway.app/")
+									openTab("https://project-tracker-f433.onrender.com/")
 								}}
 							>
 								<Text>Deployed Site</Text>
