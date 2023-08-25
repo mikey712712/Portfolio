@@ -272,7 +272,7 @@ export default function Projects() {
 					/>
 					<Box p={[, , , "0 0 0 25px"]}>
 						<Text color={"#00bb00"} fontSize={"1.7em"}>
-							CRUD Project Tracker
+							Project Tracker
 						</Text>
 						<Text m="0 0 15px 0">
 							<strong>Description:</strong> This is a full-stack multi-page CRUD app that allows users to track individual and collaborative work.
