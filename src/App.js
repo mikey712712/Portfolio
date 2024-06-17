@@ -39,7 +39,7 @@ function App() {
 			<Box h={"100%"} maxW={"1600px"} m="0 auto" w={"100vw"} className="App">
 				<Header tabWidth={tabWidth} />
 				<Welcome tabWidth={tabWidth} />
-				<Skills />
+
 				<Grid maxW={"100%"} gridTemplateColumns={["1fr", , , "2.1fr 1fr"]} gridTemplateRows={["auto auto", , , "auto"]} overflow="hidden">
 					<GridItem>
 						<Experience />
@@ -49,7 +49,7 @@ function App() {
 						<Resume />
 					</GridItem>
 				</Grid>
-
+				<Skills />
 				<Projects tabWidth={tabWidth} />
 				<Contact />
 			</Box>

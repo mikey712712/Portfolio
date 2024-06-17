@@ -107,25 +107,7 @@ export default function Header({ tabWidth }) {
 						</Text>
 						<Text>Back to Top</Text>
 					</Flex>
-					<Flex
-						_hover={{
-							color: "#00bb00",
-						}}
-						cursor={"pointer"}
-						m="0 30px"
-						transition={"color 0.4s"}
-						onClick={() => {
-							window.scrollTo({
-								top: document.querySelector("#skills").getBoundingClientRect().top + window.pageYOffset - 70,
-								behavior: "smooth",
-							})
-						}}
-					>
-						<Text color={"#00bb00"} marginRight={"5px"}>
-							02.
-						</Text>
-						<Text>Skills</Text>
-					</Flex>
+
 					<Flex
 						_hover={{
 							color: "#00bb00",
@@ -141,9 +123,28 @@ export default function Header({ tabWidth }) {
 						}}
 					>
 						<Text color={"#00bb00"} marginRight={"5px"}>
-							03.
+							02.
 						</Text>
 						<Text>Experience</Text>
+					</Flex>
+					<Flex
+						_hover={{
+							color: "#00bb00",
+						}}
+						cursor={"pointer"}
+						m="0 30px"
+						transition={"color 0.4s"}
+						onClick={() => {
+							window.scrollTo({
+								top: document.querySelector("#skills").getBoundingClientRect().top + window.pageYOffset - 70,
+								behavior: "smooth",
+							})
+						}}
+					>
+						<Text color={"#00bb00"} marginRight={"5px"}>
+							03.
+						</Text>
+						<Text>Skills</Text>
 					</Flex>
 					<Flex
 						_hover={{

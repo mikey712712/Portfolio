@@ -78,6 +78,96 @@ export default function Experience() {
 							transitionProperty={"right, opacity"}
 						>
 							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
+								Solutions Consultant - <i>Holocentric</i>
+							</Text>
+							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
+								AUG 2023 - PRESENT
+							</Text>
+							<List color={"#0f1f11"} fontSize="0.7em" spacing="5px">
+								<ListItem>
+									<Flex alignItems={"center"} gap="7px">
+										<Text fontSize="1.2em">
+											<BsCheck color={"00bb00"} />
+										</Text>
+										<Text>
+											Designed, developed, and implemented web applications using Agile methodologies, adhering to best practices in
+											coding standards, security, and performance optimization.
+										</Text>
+									</Flex>
+								</ListItem>
+								<ListItem>
+									<Flex alignItems={"center"} gap="7px">
+										<Text fontSize="1.2em">
+											<BsCheck color={"00bb00"} />
+										</Text>
+										<Text>
+											Created/Updated client configurations in the company’s tool using its proprietary programming language to create
+											Scripts/Classes/Data Models & Schemas which provided the content for their web applications.
+										</Text>
+									</Flex>
+								</ListItem>
+								<ListItem>
+									<Flex alignItems={"center"} gap="7px">
+										<Text fontSize="1.2em">
+											<BsCheck color={"00bb00"} />
+										</Text>
+										<Text>
+											Provided support during configuration releases into production at Westpac Banking Corporation, and was subsequently
+											requested to be the primary contact during content releases.
+										</Text>
+									</Flex>
+								</ListItem>
+								<ListItem>
+									<Flex alignItems={"center"} gap="7px">
+										<Text fontSize="1.2em">
+											<BsCheck color={"00bb00"} />
+										</Text>
+										<Text>
+											Provided technical support and troubleshooting expertise to resolve various issues, ensuring minimal disruption to
+											client operations.
+										</Text>
+									</Flex>
+								</ListItem>
+								<ListItem>
+									<Flex alignItems={"center"} gap="7px">
+										<Text fontSize="1.2em">
+											<BsCheck color={"00bb00"} />
+										</Text>
+										<Text>Documented and improved various day to day processes undertaken by the solutions team.</Text>
+									</Flex>
+								</ListItem>
+								<ListItem>
+									<Flex alignItems={"center"} gap="7px">
+										<Text fontSize="1.2em">
+											<BsCheck color={"00bb00"} />
+										</Text>
+										<Text>
+											Conducted meetings to understand client requirements and business objectives in order to deliver customised software
+											solutions to fit business needs.
+										</Text>
+									</Flex>
+								</ListItem>
+							</List>
+						</Flex>
+					</GridItem>
+					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(15,31,17,0.3)"]}>
+						<Flex
+							flexFlow={"column nowrap"}
+							boxSizing="border-box"
+							p={["0", , , "0 0 15px 15px"]}
+							w={"100%"}
+							h="fit-content"
+							fontWeight="500"
+							fontSize={"1.15em"}
+							ref={refOne}
+							opacity={oneInView ? 1 : 0}
+							right={oneInView ? 0 : "50px"}
+							position="relative"
+							transition={"1000ms"}
+							transitionTimingFunction={"ease-out"}
+							transitionProperty={"right, opacity"}
+						>
+							<Text fontWeight={"600"} color={"#0f1f11"} m="0">
 								Software Engineering Instructor Associate - <i>General Assembly</i>
 							</Text>
 							<Text m="0 0 5px 0" color={"#00bb00"} fontSize="0.7em">
@@ -139,7 +229,7 @@ export default function Experience() {
 							</List>
 						</Flex>
 					</GridItem>
-					<GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(15,31,17,0.3)"]}>
+					{/* <GridItem p="5px 15px 5px 0" borderRight={["unset", , , "1px solid rgba(15,31,17,0.3)"]}>
 						<Flex
 							flexFlow={"column nowrap"}
 							boxSizing="border-box"
@@ -245,7 +335,7 @@ export default function Experience() {
 								</ListItem>
 							</List>
 						</Flex>
-					</GridItem>
+					</GridItem> */}
 				</Grid>
 			</Flex>
 		</Flex>

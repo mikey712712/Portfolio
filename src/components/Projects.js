@@ -333,7 +333,7 @@ export default function Projects() {
 						</Flex>
 					</Box>
 				</Flex>
-				<Flex
+				{/* <Flex
 					ref={tictactoeRef}
 					opacity={tictactoeInView ? 1 : 0}
 					right={tictactoeInView ? 0 : "50px"}
@@ -418,7 +418,7 @@ export default function Projects() {
 							</Button>
 						</Flex>
 					</Box>
-				</Flex>
+				</Flex> */}
 			</Flex>
 		</Flex>
 	)

@@ -9,7 +9,7 @@ export default function Resume() {
 	})
 
 	const openTab = () => {
-		window.open("https://res.cloudinary.com/dyeslevyb/image/upload/v1686975930/MichaelHolton_-_CV_f2ae25.pdf", "_blank")
+		window.open("https://res.cloudinary.com/dyeslevyb/image/upload/v1718603686/MichaelHolton_lpsgky.pdf", "_blank")
 	}
 	return (
 		<Flex

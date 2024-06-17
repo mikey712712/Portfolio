@@ -264,8 +264,8 @@ export default function Welcome({ tabWidth }) {
 							</Heading>
 							<Text color="#0f1f11" pl="2px">
 								Having developed a passion for the tech industry and it's innovative potential, I transitioned my career focus towards software
-								engineering, completed a 12 week software engineering bootcamp at General Assembly, and have spent the time since refining my
-								skills.
+								engineering, completed a 12 week software engineering bootcamp at General Assembly, and have spent the time since working as a
+								Solutions Consultant.
 							</Text>
 						</Box>
 					</Box>

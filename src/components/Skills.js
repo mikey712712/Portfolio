@@ -69,8 +69,8 @@ export default function Skills() {
 						Frontend Design
 					</Text>
 					<Text marginBottom={"auto"} w="95%">
-						Experienced in JavaScript, HTML, CSS and single-page/multi-page app development using JavaScript frameworks such as ReactJS/Vite.
-						Passionate about interactive UI design, experienced with CSS libraries such as Chakra-UI and Bootstrap.
+						Experienced in JavaScript, HTML, CSS and single-page/multi-page app development using JavaScript frameworks such as Vue.js, ReactJS,
+						Vite. Passionate about interactive UI design, experienced with CSS libraries such as Chakra-UI and Bootstrap.
 					</Text>
 					<Flex h="40px" alignItems={"center"} color="#00bb00" marginTop={"10px"} fontSize={"1.9em"} gap="10px">
 						<SiCss3 />
